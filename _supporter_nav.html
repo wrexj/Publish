@@ -1,3 +1,14 @@
+<ul class="supporter-nav action-panel">
+
+  <h4>Take Action</h4>
+
+  {% for child in site.supporter_pages %}
+  <li {% if page == child %}class="on"{% endif %}><a href="{{ child.url }}">{{ child.icon | icon }} {{ child.name }}</a></li>
+  {% endfor %}
+
+</ul>
+
+
 <div class="supporter-pic clearfix">
   <div class="supporter-pic-left">
     {{ request.current_signup.bigger_profile_image }}
@@ -102,15 +113,7 @@
 {% endif %}
 
 
-<ul class="supporter-nav action-panel">
 
-  <h4>Action panel</h4>
-
-  {% for child in site.supporter_pages %}
-  <li {% if page == child %}class="on"{% endif %}><a href="{{ child.url }}">{{ child.icon | icon }} {{ child.name }}</a></li>
-  {% endfor %}
-
-</ul>
 
 
 

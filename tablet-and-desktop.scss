@@ -14,7 +14,7 @@ $headline-font-alt: "Oswald", sans-serif;
 // main font
 $font: "Droid Serif", serif;
 
-$turquoise: #53cfd7;
+$turquoise: #FF8040;  //Original Color $turquoise: #53cfd7; //
 $grey: #ccc;
 $ltgrey: #f2f2f2;
 $charcoal: #656565;
@@ -22,6 +22,9 @@ $red: #d41116;
 $green: #619114;
 $facebook: #3b5998;
 $twitter: #00aced;
+// DJM Start 
+$black: #000;
+//DJM End//
 
 $onecolumn-bg: #fff;
 $twocolumn-color: #000;
@@ -146,6 +149,18 @@ header {
       position: static;
     }
   }
+}
+
+ /* DJM Header Center Message */
+.header-text{
+  float: center;
+   color: $theme-color-1;
+  font-size: 48px;
+  line-height: 50px;
+  margin-left: 100px;
+  padding-left: 50px;
+  padding-top: 60px;
+
 }
 
 .header-container{
