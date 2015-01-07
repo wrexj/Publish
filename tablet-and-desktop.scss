@@ -3,65 +3,55 @@
    For the mobile first stylesheet which applies to all screen widths, see theme.scss.
    =================================================================================== */
 
-    <!-- 
-******************************************************************
-Modifications..
-
-DJM - 1401 - 
-  - Added $Orange Variable
-
- 
-******************************************************************
- -->
-
-
 //* style variables *//
 
 // headline font
-$headline-font: "Oswald", sans-serif;
+$headline-font: "Bree Serif", serif;
 
 // alternative headline font
-$headline-font-alt: "Oswald", sans-serif;
+$headline-font-alt: "Bree Serif", sans-serif;
 
 // main font
-$font: "Droid Serif", serif;
+$font: "Lato", sans-serif;
 
+$brown: #766341;
 $burgundy: #601B28; 
-$orange: #f04f23;
-$turquoise: #FF8040;  //Original Color $turquoise: #53cfd7; //
+$orange: #c63;
+$turquoise: #53cfd7;
+$tan: #d4c89e;
 $grey: #ccc;
 $ltgrey: #f2f2f2;
 $charcoal: #656565;
-$red: #d41116;
-$green: #224622;
+$red: #f93c04;
+$green: #5C8726;
+$bhagreen: #264926;
+$black: #000;
+$white: #fff;
 $facebook: #3b5998;
 $twitter: #00aced;
-// DJM Start 
-$black: #000;
-//DJM End//
 
-$onecolumn-bg: #fff;
-$twocolumn-color: #000;
+$onecolumn-bg: $white ;
+$twocolumn-color: $black;
 
-$nav-hover: $orange;
-$nav-hover-color: #000;
-$nav-background: #000;
-$nav-color: #fff;
-$desktop-site-bg: #fff;
-$desktop-site-color: #000;
+$nav-hover: $green;
+$nav-hover-color: $white;
+$nav-background: $bhagreen;
+$nav-color: $white;
+$desktop-site-bg: #fbfbf3;
+$desktop-site-color: $black;
 $nav-container-border: 0;
 
-$headline-transform: uppercase;
-$flex-background: transparent;
-$flex-border: 3px solid #fff;
-$flex-color: #fff;
+$headline-transform: none;
+$flex-background: $red;
+$flex-border: 4px solid $red;
+$flex-color: $white;
 
-$theme-color-1: $Orange;
-$theme-color-2: #000;
-$theme-color-3: $grey;
-$theme-color-4: $charcoal;
+$theme-color-1: $bhagreen;
+$theme-color-2: $black;
+$theme-color-3: $tan;
+$theme-color-4: $black;
 
-$icon-button-bg: $theme-color-4;
+$icon-button-bg: $orange;
 
 $onecolumn-container-padding: 50px 30px;
 $onecolumn-container-border: 1px solid $theme-color-3;
@@ -163,18 +153,6 @@ header {
       position: static;
     }
   }
-}
-
- /* DJM Header Center Message */
-.header-text{
-  float: center;
-   color: $theme-color-1;
-  font-size: 48px;
-  line-height: 50px;
-  margin-left: 100px;
-  padding-left: 50px;
-  padding-top: 60px;
-
 }
 
 .header-container{

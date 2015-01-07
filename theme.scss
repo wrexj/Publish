@@ -6,75 +6,82 @@
 //* style variables *//
 
 // headline font
-$headline-font: "Oswald", sans-serif;
+$headline-font: "Bree Serif", serif;
 $title-font-weight: 700;
 
 // alternative headline font
-$headline-font-alt: "Oswald", sans-serif;
+$headline-font-alt: "Bree Serif", sans-serif;
 
 // main font
-$font: "Droid Serif", serif;
+$font: "Lato", sans-serif;
 
+$brown: #766341;
 $burgundy: #601B28; 
-$orange: #f04f23;
-$turquoise: #FF8040;  //Original Color $turquoise: #53cfd7; //
+$orange: #c63;
+$turquoise: #3A6F8F;
+$tan: #d4c89e;
 $grey: #ccc;
 $ltgrey: #f2f2f2;
 $charcoal: #656565;
-$red: #d41116;
-$green: #224622;
+$orange: #f93c04;
+$red: #5C8726;
+$green: #5C8726;
+$bhagreen: #264926;
+$black: #000;
+$white: #fff;
 $facebook: #3b5998;
 $twitter: #00aced;
 $header-color: #fff;
 $header-text-color: #000;
 
-$theme-color-1: $turquoise;
-$theme-color-2: #000;
-$theme-color-3: $grey;
-$theme-color-4: $charcoal;
+$theme-color-1: $bhagreen;
+$theme-color-2: $black;
+$theme-color-3: $tan;
+$theme-color-4: $black;
+
 
 //general site settings
-$site-bg: #fff;
+$site-bg: #fbfbf3;
 $site-color: #000;
-$desktop-site-bg: #fff;
+$desktop-site-bg: #fbfbf3;
 $desktop-site-color: #000;
-$onecolumn-bg: #fff;
+$onecolumn-bg: white;
 $twocolumn-color: #000;
-$footer-bg: #000;
-$headline-weight: 700;
-$check_radio_sheet: url(check_radio_sheet.png);
-$progress: $theme-color-4;
-$headline-transform: uppercase;
-$opaque-bg-rgb: rgb(255, 255, 255);
-$opaque-bg-rgba: rgba(255, 255, 255, 0.8);
+$footer-bg: $charcoal;
+$headline-weight: 500;
+$check_radio_sheet: url(check_radio_sheet_navy.png);
+$progress: #ffa38a;
+$headline-transform: none;
+$opaque-bg-rgb: rgb(212, 200, 158);
+$opaque-bg-rgba: rgba(212, 200, 158, 0.8);
 
 //blog share bar
-$share-bar-bg: $grey;
-$icon-button-bg: $theme-color-4;
-$icon-button-border: 0;
+$share-bar-bg: transparent;
+$icon-button-bg: $grey;
+$icon-button-border: 2px solid #f93c04;
 $icon-button-color: #fff;
 
 // blog byline and follow buttons
-$byline-image-border: #fff;
-$delete: $red;
-$delete-border: 2px solid $red;
-$follow: $charcoal;
-$follow-color: #fff;
-$follow-border: 2px solid #fff;
+$byline-image-border: $orange;
+$delete: $orange;
+$delete-border: 2px solid $orange;
+$follow: #d4c89e;
+$follow-color: $grey;
+$follow-border: 2px solid #000;
 
 // page features
-$flex-background: transparent;
-$flex-border: 3px solid #fff;
+$flex-background: $orange;
+$flex-border: 4px solid $orange;
 $flex-color: #fff;
 
 
 // supporter nav buttons
-$supporter-nav-button-one: $grey;
-$supporter-nav-color-one: #000;
-$supporter-nav-button-two: $theme-color-3;
-$supporter-nav-color-two: $theme-color-4;
-$supporter-nav-button-three: #000;
-$supporter-nav-color-three: #fff;
+$supporter-nav-button-one: $bhagreen;
+$supporter-nav-color-one: $white;
+$supporter-nav-button-two: $burgundy;
+$supporter-nav-color-two: $white;
+$supporter-nav-button-three: $tan;
+$supporter-nav-color-three: $white;
 
 //turquoise specific fields
 $feature-border: 0;
@@ -84,8 +91,8 @@ $supporter-nav-button-border: 0;
 $theme-color-5: rgba(141, 207, 215, 0.6);
 
 // general success and error colors
-$red: #d41116;
-$green: #619114;
+$orange: #f93c04;
+$bhagreen: #619114;
 
 // mixins
 
@@ -247,7 +254,7 @@ h6 {
 // general link styles
 
 a {
-  color: $theme-color-1;
+  color: $orange;
   text-decoration: none;
   outline: none;
 }
@@ -724,7 +731,7 @@ nav {
     background-color: $twitter;
   }
   .fa-envelope{
-    background-color: $red;
+    background-color: $orange;
   }
 }
 
@@ -1494,12 +1501,12 @@ footer {
 
 .off-button-small {
   font-size: 11px;
-  color: $red;
+  color: $orange;
 }
 
 .on-button-small {
   font-size: 11px;
-  color: $green;
+  color: $bhagreen;
 }
 
 .subhead {
@@ -1511,7 +1518,7 @@ footer {
 // applied to alerts or warnings
 
 .red {
-  color: $red;
+  color: $orange;
 }
 
 small {
@@ -1671,7 +1678,7 @@ small {
 
 .page-tag {
   text-indent: 40px;
-  background-color: $theme-color-1;
+  background-color: $orange;
   font-size: 11px;
   color: white;
   padding: 2px 5px;
@@ -2004,7 +2011,7 @@ h4.expander-head {
     color: white;
   }
   .error {
-    background-color: $red;
+    background-color: $orange;
     color: white;
   }
   .info {
@@ -2428,7 +2435,7 @@ h4.expander-head {
 }
 
 .form-errors {
-  background-color: $red;
+  background-color: $orange;
   @include border-radius(2px);
   color: #fff;
   font-size: 13px;
