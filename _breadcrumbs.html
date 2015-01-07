@@ -1,3 +1,11 @@
+<!-- 
+******************************************************************
+Modifications..
+
+DJM - 1401 - 
+ 
+******************************************************************
+ -->
 {% if page.level > 0 %}
 {% assign home = page.parent %}
 {% else %}
@@ -22,7 +30,8 @@
       </ul>
   </div>
 </div>
-
+<!-- 
+djm -    Test to eliminate Breadcrums...
 <div class="desktop-visible">
   <div class="subnav-container clearfix" id="subnav-container" role="navigation">
     <ul id="subnav" class="subnav desktop-nav">
@@ -48,7 +57,7 @@
     </ul>
   </div>
 </div>
-
+ -->
 {% elsif page.has_parent? %}
 
 <div id="page-nav" class="page-nav">
@@ -66,7 +75,10 @@
   </ul>
 </div>
 
+<!-- DJM
+
   {% if page.has_subnav? %}
+
 
   <div class="subnav-container clearfix" id="subnav-container" role="navigation">
     <ul class="subnav">
@@ -88,7 +100,7 @@
       {% endfor %}
     </ul>
   </div>
-
+ -->
   {% endif %}
 
 {% endif %}

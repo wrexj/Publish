@@ -3,6 +3,18 @@
    For the mobile first stylesheet which applies to all screen widths, see theme.scss.
    =================================================================================== */
 
+    <!-- 
+******************************************************************
+Modifications..
+
+DJM - 1401 - 
+  - Added $Orange Variable
+
+ 
+******************************************************************
+ -->
+
+
 //* style variables *//
 
 // headline font
@@ -14,12 +26,14 @@ $headline-font-alt: "Oswald", sans-serif;
 // main font
 $font: "Droid Serif", serif;
 
+$burgundy: #601B28; 
+$orange: #f04f23;
 $turquoise: #FF8040;  //Original Color $turquoise: #53cfd7; //
 $grey: #ccc;
 $ltgrey: #f2f2f2;
 $charcoal: #656565;
 $red: #d41116;
-$green: #619114;
+$green: #224622;
 $facebook: #3b5998;
 $twitter: #00aced;
 // DJM Start 
@@ -29,7 +43,7 @@ $black: #000;
 $onecolumn-bg: #fff;
 $twocolumn-color: #000;
 
-$nav-hover: $turquoise;
+$nav-hover: $orange;
 $nav-hover-color: #000;
 $nav-background: #000;
 $nav-color: #fff;
@@ -42,7 +56,7 @@ $flex-background: transparent;
 $flex-border: 3px solid #fff;
 $flex-color: #fff;
 
-$theme-color-1: $turquoise;
+$theme-color-1: $Orange;
 $theme-color-2: #000;
 $theme-color-3: $grey;
 $theme-color-4: $charcoal;

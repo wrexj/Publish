@@ -1,0 +1,5 @@
+ <div id="state-page" class="state-page">
+      <a class=button-news href="alaska_bha_news">News</a>
+      <a class=button-events href="alaska_bha_events">Events</a>
+      <a class=button-issues href="alaska_bha_issues">Issues</a>
+</div>
