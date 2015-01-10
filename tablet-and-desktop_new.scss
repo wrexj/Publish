@@ -14,44 +14,37 @@ $headline-font-alt: "Bree Serif", sans-serif;
 // main font
 $font: "Lato", sans-serif;
 
-$brown: #766341;
-$burgundy: #601B28; 
-$orange: #c63;
 $turquoise: #53cfd7;
-$tan: #d4c89e;
 $grey: #ccc;
 $ltgrey: #f2f2f2;
 $charcoal: #656565;
 $red: #f93c04;
-$green: #5C8726;
-$bhagreen: #264926;
-$black: #000;
-$white: #fff;
+$green: #619114;
 $facebook: #3b5998;
 $twitter: #00aced;
 
-$onecolumn-bg: $white ;
-$twocolumn-color: $black;
+$onecolumn-bg: white;
+$twocolumn-color: #000;
 
-$nav-hover: $green;
-$nav-hover-color: $white;
-$nav-background: $bhagreen;
-$nav-color: $white;
+$nav-hover: #7226ff;
+$nav-hover-color: #fff;
+$nav-background: #1b194a;
+$nav-color: #fff;
 $desktop-site-bg: #fbfbf3;
-$desktop-site-color: $black;
+$desktop-site-color: #000;
 $nav-container-border: 0;
 
 $headline-transform: none;
 $flex-background: $red;
 $flex-border: 4px solid $red;
-$flex-color: $white;
+$flex-color: #fff;
 
-$theme-color-1: $bhagreen;
-$theme-color-2: $burgundy;
-$theme-color-3: $tan;
-$theme-color-4: $black;
+$theme-color-1: #f93c04;
+$theme-color-2: #1b194a;
+$theme-color-3: #d4c89e;
+$theme-color-4: #000;
 
-$icon-button-bg: $orange;
+$icon-button-bg: $red;
 
 $onecolumn-container-padding: 50px 30px;
 $onecolumn-container-border: 1px solid $theme-color-3;

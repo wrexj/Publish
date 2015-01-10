@@ -1,0 +1,2597 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"th",
+				"theme-color-1"
+			],
+			[
+				"col",
+				"theme-color-4"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"hea",
+				"header	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 207 files for \"icon-menu\"\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\PresenceTheme\\_icons.scss:\n  120  \n  121  // off canvas nav icon\n  122: .icon-menu:before { content: '\\f0c9'; margin: 0; } /* '' */\n  123  \n  124  // political capital\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\PresenceTheme\\_nav.html:\n   25  </nav>\n   26  \n   27: <a href=\"#menu\" class=\"menu-link\"><i class=\"icon-menu\"></i></a>\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\PresenceTheme\\theme.scss:\n  582    z-index: 99;\n  583    @include border-radius(2px);\n  584:   .icon-menu {\n  585      color: $mobile-menu-color;\n  586      font-size: 23px;\n\n3 matches across 3 files\n\n\nSearching 207 files for \"class=subnav\"\n\n0 matches across 0 files\n\n\nSearching 415 files for \"addreaction\"\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\_homepage_excerpt.html:\n  109            {% if post.show_stream? %}\n  110  \n  111:           <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  112              {% if post.public_activities_count > 0 %}\n  113                <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n  ...\n  172            {% if post.show_stream? %}\n  173  \n  174:           <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  175              {% if post.public_activities_count > 0 %}\n  176                <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\_page_follow.html:\n    1  {% if page.show_stream? and request.sorta_logged_in? %}\n    2    {% if request.current_signup.following_page_ids contains page.id %}\n    3:   <span class=\"addreaction\">Following Reactions</span><a href=\"{{ page.unfollow_url }}\" class=\"delete\"><i class=\"fa fa-times\"></i></a>\n    4    {% else %}\n    5:   <span class=\"addreaction\">Follow Reactions</span><a href=\"{{ page.follow_url }}\" class=\"post\"><i class=\"fa fa-plus\"></i></a>\n    6    {% endif %}\n    7  {% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\_page_stream.html:\n    9  \n   10        {% if page.public_activities_count == 1 %}\n   11:       <a name=\"addreaction\"></a>\n   12  \n   13        <h3>Showing 1 reaction</h3>\n   14        {% elsif page.public_activities_count > 1 %}\n   15:       <a name=\"addreaction\"></a>\n   16  \n   17        <h3>Showing {{ page.public_activities_count }} reactions</h3>\n   18        {% elsif page.is_commentable? %}\n   19:       <a name=\"addreaction\"></a>\n   20  \n   21        <h3>Be the first to comment</h3>\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\_page_stream_for_suggestions.html:\n    5  \n    6      {% if page.public_activities_count == 1 %}\n    7:     <a name=\"addreaction\"></a>\n    8  \n    9      <h3>Showing 1 reaction</h3>\n   10      {% elsif page.public_activities_count > 1 %}\n   11:     <a name=\"addreaction\"></a>\n   12  \n   13      <h3>Showing {{ page.public_activities_count }} reactions</h3>\n   14      {% elsif page.is_commentable? %}\n   15:     <a name=\"addreaction\"></a>\n   16  \n   17      <h3>Be the first to comment</h3>\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\pages_show_blog.html:\n   89                  {% if post.show_stream? %}\n   90  \n   91:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n   92                    {% if post.public_activities_count > 0 %}\n   93                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n   ..\n  152                  {% if post.show_stream? %}\n  153  \n  154:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  155                    {% if post.public_activities_count > 0 %}\n  156                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\pages_show_blog_wide.html:\n   87                  {% if post.show_stream? %}\n   88  \n   89:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n   90                    {% if post.public_activities_count > 0 %}\n   91                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n   ..\n  142                  {% if post.show_stream? %}\n  143  \n  144:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  145                    {% if post.public_activities_count > 0 %}\n  146                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\pages_show_suggestion_box.html:\n  128        {% endif %}\n  129  \n  130:       <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  131          {% if post.public_activities_count > 0 %}\n  132            <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\pages_show_suggestion_box_mobile.html:\n  143   \n  144  	   		{% if post.public_activities_count > 0 %}\n  145: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></span>\n  146  	  	  {% else %}\n  147: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />Add your reaction</a></span>\n  148  	  	  {% endif %}\n  149   \n  ...\n  184  \n  185  	   		{% if post.public_activities_count > 0 %}\n  186: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></span>\n  187  	  	  {% else %}\n  188: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />Add your reaction</a></span>\n  189  	  	  {% endif %}\n  190  \n  ...\n  230  \n  231  	   		{% if post.public_activities_count > 0 %}\n  232: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></span>\n  233  	  	  {% else %}\n  234: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />Add your reaction</a></span>\n  235  	  	  {% endif %}\n  236  \n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\pages_show_suggestion_box_wide.html:\n  132        {% endif %}\n  133  \n  134:       <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  135          {% if post.public_activities_count > 0 %}\n  136            <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\_homepage_excerpt.html:\n  109            {% if post.show_stream? %}\n  110  \n  111:           <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  112              {% if post.public_activities_count > 0 %}\n  113                <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n  ...\n  172            {% if post.show_stream? %}\n  173  \n  174:           <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  175              {% if post.public_activities_count > 0 %}\n  176                <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\_page_follow.html:\n    1  {% if page.show_stream? and request.sorta_logged_in? %}\n    2    {% if request.current_signup.following_page_ids contains page.id %}\n    3:   <span class=\"addreaction\">Following Reactions</span><a href=\"{{ page.unfollow_url }}\" class=\"delete\"><i class=\"fa fa-times\"></i></a>\n    4    {% else %}\n    5:   <span class=\"addreaction\">Follow Reactions</span><a href=\"{{ page.follow_url }}\" class=\"post\"><i class=\"fa fa-plus\"></i></a>\n    6    {% endif %}\n    7  {% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\_page_stream.html:\n    9  \n   10        {% if page.public_activities_count == 1 %}\n   11:       <a name=\"addreaction\"></a>\n   12  \n   13        <h3>Showing 1 reaction</h3>\n   14        {% elsif page.public_activities_count > 1 %}\n   15:       <a name=\"addreaction\"></a>\n   16  \n   17        <h3>Showing {{ page.public_activities_count }} reactions</h3>\n   18        {% elsif page.is_commentable? %}\n   19:       <a name=\"addreaction\"></a>\n   20  \n   21        <h3>Be the first to comment</h3>\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\_page_stream_for_suggestions.html:\n    5  \n    6      {% if page.public_activities_count == 1 %}\n    7:     <a name=\"addreaction\"></a>\n    8  \n    9      <h3>Showing 1 reaction</h3>\n   10      {% elsif page.public_activities_count > 1 %}\n   11:     <a name=\"addreaction\"></a>\n   12  \n   13      <h3>Showing {{ page.public_activities_count }} reactions</h3>\n   14      {% elsif page.is_commentable? %}\n   15:     <a name=\"addreaction\"></a>\n   16  \n   17      <h3>Be the first to comment</h3>\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\pages_show_blog.html:\n   89                  {% if post.show_stream? %}\n   90  \n   91:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n   92                    {% if post.public_activities_count > 0 %}\n   93                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n   ..\n  144                  {% if post.show_stream? %}\n  145  \n  146:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  147                    {% if post.public_activities_count > 0 %}\n  148                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\pages_show_blog_wide.html:\n   87                  {% if post.show_stream? %}\n   88  \n   89:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n   90                    {% if post.public_activities_count > 0 %}\n   91                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n   ..\n  142                  {% if post.show_stream? %}\n  143  \n  144:                 <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  145                    {% if post.public_activities_count > 0 %}\n  146                      <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\pages_show_suggestion_box.html:\n  128        {% endif %}\n  129  \n  130:       <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  131          {% if post.public_activities_count > 0 %}\n  132            <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\pages_show_suggestion_box_mobile.html:\n  143   \n  144  	   		{% if post.public_activities_count > 0 %}\n  145: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></span>\n  146  	  	  {% else %}\n  147: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />Add your reaction</a></span>\n  148  	  	  {% endif %}\n  149   \n  ...\n  184  \n  185  	   		{% if post.public_activities_count > 0 %}\n  186: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></span>\n  187  	  	  {% else %}\n  188: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />Add your reaction</a></span>\n  189  	  	  {% endif %}\n  190  \n  ...\n  230  \n  231  	   		{% if post.public_activities_count > 0 %}\n  232: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></span>\n  233  	  	  {% else %}\n  234: 	  	  <span class=\"small_button\"><a href=\"{{ post.url }}#addreaction\"><img src=\"{{ 'fugue-balloons' | icon_url }}\" width=\"12\" height=\"12\" class=\"reaction_icon_pad\" />Add your reaction</a></span>\n  235  	  	  {% endif %}\n  236  \n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\pages_show_suggestion_box_wide.html:\n  132        {% endif %}\n  133  \n  134:       <a href=\"{{ post.url }}#addreaction\" class=\"button icon-button\">\n  135          {% if post.public_activities_count > 0 %}\n  136            <i>{{ post.public_activities_count }}</i> comment{% if post.public_activities_count > 1 %}s{% endif %}\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\theme.scss:\n 1628      padding-right: 10px;\n 1629    }\n 1630:   .addreaction, .addreaction-right, .plus, .plus-left {\n 1631      font-size: 1em;\n 1632    }\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\theme.scss:\n 1628      padding-right: 10px;\n 1629    }\n 1630:   .addreaction, .addreaction-right, .plus, .plus-left {\n 1631      font-size: 1em;\n 1632    }\n\n48 matches across 20 files\n\n\nSearching 415 files for \"vote-pledge-form\"\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\_buttons.scss:\n  120  \n  121  // page specific buttons\n  122: .vote-pledge-form {\n  123    .button {\n  124      margin: -10px 10px 15px 0;\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\_homepage_excerpt_vote_pledge.html:\n   26    <div class=\"form\">\n   27      <div class=\"form-errors\">{% error_messages_for vote_pledge %}</div>\n   28:     <div id=\"vote_pledge_form\" class=\"vote-pledge-form\">\n   29  \n   30        <div class=\"row-fluid\">\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\pages_show_vote_pledge.html:\n   66      <div class=\"form\">\n   67        <div class=\"form-errors\">{% error_messages_for vote_pledge %}</div>\n   68:       <div id=\"vote_pledge_form\" class=\"vote-pledge-form\">\n   69  \n   70          <div class=\"row-fluid\">\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\pages_show_vote_pledge_wide.html:\n   69          <div class=\"form\">\n   70            <div class=\"form-errors\">{% error_messages_for vote_pledge %}</div>\n   71:           <div id=\"vote_pledge_form\" class=\"vote-pledge-form\">\n   72  \n   73              <div class=\"row-fluid\">\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\_buttons.scss:\n  120  \n  121  // page specific buttons\n  122: .vote-pledge-form {\n  123    .button {\n  124      margin: -10px 10px 15px 0;\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\_homepage_excerpt_vote_pledge.html:\n   26    <div class=\"form\">\n   27      <div class=\"form-errors\">{% error_messages_for vote_pledge %}</div>\n   28:     <div id=\"vote_pledge_form\" class=\"vote-pledge-form\">\n   29  \n   30        <div class=\"row-fluid\">\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\pages_show_vote_pledge.html:\n   66      <div class=\"form\">\n   67        <div class=\"form-errors\">{% error_messages_for vote_pledge %}</div>\n   68:       <div id=\"vote_pledge_form\" class=\"vote-pledge-form\">\n   69  \n   70          <div class=\"row-fluid\">\n\nG:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish\\Publish Baseline\\pages_show_vote_pledge_wide.html:\n   69          <div class=\"form\">\n   70            <div class=\"form-errors\">{% error_messages_for vote_pledge %}</div>\n   71:           <div id=\"vote_pledge_form\" class=\"vote-pledge-form\">\n   72  \n   73              <div class=\"row-fluid\">\n\n8 matches across 8 files\n",
+			"settings":
+			{
+				"buffer_size": 17032,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "pages_show_vote_pledge_wide.html",
+			"settings":
+			{
+				"buffer_size": 3596,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 3629,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+			"settings":
+			{
+				"buffer_size": 30564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "-state chapter buttons",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 13677,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/* ===================================================================================\n   This is the tablet and desktop stylesheet. It applies to viewports above 768px.\n   For the mobile first stylesheet which applies to all screen widths, see theme.scss.\n   =================================================================================== */\n\n/* ===================================================================================\nModifications..\n\nDJM - 1401 - \n  - Added $Orange Variable\n\n \n=================================================================================== */\n\n/*  */\n//* style variables *//\n\n// headline font\n$headline-font: \"Oswald\", sans-serif;\n\n// alternative headline font\n$headline-font-alt: \"Oswald\", sans-serif;\n\n// main font\n$font: \"Droid Serif\", serif;\n\n$burgundy: #601B28; \n$orange: #f04f23;\n$turquoise: #FF8040;  //Original Color $turquoise: #53cfd7; //\n$grey: #ccc;\n$ltgrey: #f2f2f2;\n$charcoal: #656565;\n$red: #d41116;\n$green: #224622;\n$facebook: #3b5998;\n$twitter: #00aced;\n// DJM Start \n$black: #000;\n//DJM End//\n\n$onecolumn-bg: #fff;\n$twocolumn-color: #000;\n\n$nav-hover: $orange;\n$nav-hover-color: #000;\n$nav-background: #000;\n$nav-color: #fff;\n$desktop-site-bg: #fff;\n$desktop-site-color: #000;\n$nav-container-border: 0;\n\n$headline-transform: uppercase;\n$flex-background: transparent;\n$flex-border: 3px solid #fff;\n$flex-color: #fff;\n\n$theme-color-1: $Orange;\n$theme-color-2: #000;\n$theme-color-3: $grey;\n$theme-color-4: $charcoal;\n\n$icon-button-bg: $theme-color-4;\n\n$onecolumn-container-padding: 50px 30px;\n$onecolumn-container-border: 1px solid $theme-color-3;\n\n// border-radius mixin\n@import \"border_radius\";\n\n// fluid grid for tablet\n@import \"grid-tablet\";\n\n//compass css3 mixins\n@import \"compass/css3\";\n\n//mobile nav\n@import \"mobile-nav\";\n\nblockquote{\n  font-size: 24px;\n  line-height: 28px;\n}\n\nbody {\n  background: $desktop-site-bg;\n  margin: 0;\n  font: 15px/24px $font;\n  color: $desktop-site-color;\n}\n\nh1.title {\n  font-size: 48px;\n  line-height: 50px;\n}\n\n// page layout if the sidebar is turned on\n\n.onecolumn-container {\n  padding: $onecolumn-container-padding;\n  border: $onecolumn-container-border;\n  width: 100%;\n  margin: 0px auto;\n  background: $onecolumn-bg;\n}\n\n.twocolumn-container {\n  margin-top: 35px;\n  margin-bottom: 20px;\n  .left-column, .right-column-wide {\n    float: left;\n    width: 67.2261208577%;\n    // 710px ÷ 1026px\n    margin-right: 2.559454191033%;\n    // 16px ÷ 1026px\n    margin-bottom: 0;\n    color: $twocolumn-color;\n  }\n  .right-column, .left-column-narrow {\n    float: left;\n    width: 30.214424951267%;\n    // 310px ÷ 1026px\n    margin-bottom: 0;\n  }\n  .right-column-wide {\n    margin-right: 0;\n  }\n  .left-column-narrow {\n    margin-right: 2.559454191033%;\n    // 16px ÷ 1026px\n  }\n}\n\n// site header image and subheadline\n\n.site-header{\n  font-size: 36px;\n  line-height: 40px;\n}\n\n// wraps your site name or site logo\n\nheader {\n  max-width: 50%;\n  // 286px ÷ 1140px\n  float: left;\n  padding: 20px 0 20px 30px;\n}\n\n.site-logo {\n  header, header.splash {\n    float: left;\n    text-align: left;\n    padding: 0;\n    max-width: none;\n    margin-left: 0;\n    img {\n      max-width: none;\n      left: 0;\n    }\n    a{\n      position: static;\n    }\n  }\n}\n\n /* DJM Header Center Message */\n.header-text{\n  float: center;\n   color: $theme-color-1;\n  font-size: 48px;\n  line-height: 50px;\n  margin-left: 100px;\n  padding-left: 50px;\n  padding-top: 60px;\n\n}\n\n.header-container{\n  padding: 15px 0;\n}\n\n// site signup in the header\n\n.header-signup{\n  width: 30%;\n  float: right;\n  .email-signup {\n    margin-top: 24px;\n  }\n}\n\n// site wide footer\n\nfooter {\n  .footer-right {\n    margin-top: 0;\n    text-align: right;\n  }\n}\n\n// hides off canvas nav\n\n.wrap.active {\n  left: 0;\n}\n\n.sharetable {\n  display: block;\n  width: 487px;\n  .facebook-cell {\n    float: left;\n    text-align: left;\n    padding: 0 20px 0 0;\n    vertical-align: top;\n    width: 320px;\n  }\n  .twitter-cell {\n    float: left;\n    text-align: left;\n    padding: 0 20px 0 0;\n    vertical-align: top;\n    width: 75px;\n  }\n  .gplus-cell {\n    float: left;\n    text-align: left;\n    vertical-align: top;\n    width: 52px;\n  }\n}\n\n.mobile-visible {\n  display: none;\n}\n\n.desktop-visible {\n  display: block;\n}\n\n.flash-share {\n  .float {\n    float: right;\n  }\n}\n\n// icon which activates off canvas nav\n\n.menu-link {\n  display: none;\n}\n\n// top nav with drop downs\n\n.nav-container{\n  background: $nav-background;\n  margin-bottom: -1px;\n  position: relative;\n  z-index: 5;\n  border-bottom: $nav-container-border;\n}\n\n.subnav-container{\n  margin-bottom: 50px;\n}\n\nnav, .subnav {\n  background-color: transparent;\n  border-right: 0;\n  border-top: 0;\n  height: auto;\n  margin: 0;\n  position: static;\n  width: auto;\n  .topnav {\n    margin: 0;\n    padding: 0;\n    clear: both;\n    list-style: none;\n  }\n  li {\n    font-family: $headline-font;\n    display: inline-block;\n    margin: 0 10px 0 0;\n    position: relative;\n    background-color: $nav-background;\n    border: 0;\n    line-height: 55px;\n    text-transform: $headline-transform;\n    a {\n      display: block;\n      width: 100%;\n      height: 100%;\n      color: $nav-color;\n      padding: 0 15px 0;\n    }\n    &:last-child {\n      margin-right: 0;\n    }\n    &:hover, &.active{\n      border-color: transparent;\n      background-color: $nav-hover;\n      color: $nav-hover-color;\n      a {\n        color: $nav-hover-color;\n      }\n    }\n  }\n  /* controls bg color of top when hovering on sub */\n  .sub {\n    position: absolute;\n    top: 54px;\n    left: 0;\n    z-index: 99999;\n    background-color: $nav-hover;\n    padding: 8px 0 5px 0;\n    width: 200px;\n    display: none;\n  }\n  .sub li {\n    width: 100%;\n    border: none;\n    color: $nav-hover-color;\n    font-size: 14px;\n    line-height: 28px;\n    display: block;\n    text-transform: none;\n    background-color: transparent;\n    border-color:transparent;\n    @include border-radius(0);\n\n    &.mobile-visible {\n      display: none;\n    }\n  }\n  .sub a {\n    background: none;\n    padding: 5px 20px 5px 22px;\n\n    &:hover {\n      background-color: transparent;\n      text-decoration: none;\n      color: white;\n    }\n  }\n}\n\n// navigation shown if a page has more than one subpage\n\n.subnav {\n  margin: 0 0 15px 0;\n  padding: 0;\n  float: left;\n  clear: both;\n  font-size: 13px;\n  max-width: 100%;\n  li{\n    margin-bottom: 13px;\n  }\n}\n\n.desktop-nav {\n  li:hover .sub {\n    display: block;\n  }\n}\n\n// follow page link shown in page stream\n\n.page-follow {\n  float: right;\n  margin-top: -35px;\n}\n\n// inline radio buttons and check boxes\n\n.radio-inline, .checkbox-inline {\n  span {\n    white-space: nowrap;\n    display: inline-block;\n  }\n  input[type=\"radio\"], input[type=\"checkbox\"] {\n    margin: 0;\n    display: inline-block;\n  }\n  input[type=\"radio\"]:checked+label, input[type=\"checkbox\"]:checked+label {\n    background-color: transparent;\n    color: #505054;\n  }\n  label {\n    display: block;\n  }\n  label.radio, label.checkbox {\n    .option_label {\n      display: inline;\n    }\n    position: relative;\n    top: 2px;\n    display: inline-block;\n    width: auto;\n    background-color: transparent;\n    font-family: $font;\n    color: #505054;\n    font-size: 15px;\n    font-weight: normal;\n    text-align: left;\n    padding: 0;\n  }\n  label.checkbox {\n    position: relative;\n    padding: 0;\n    height: auto;\n    font-size: inherit;\n    margin: 0;\n  }\n &.checkbox-inline {\n    vertical-align: top;\n    li {\n      width: auto;\n      label {\n        width: auto;\n      }\n      input[type=\"checkbox\"] {\n        vertical-align: middle;\n      }\n    }\n  }\n}\n\n// inline radio buttons\n\n.radio.inline, .checkbox.inline, .inline label.radio {\n  display: inline-block;\n  margin-right: 20px;\n  padding-top: 5px;\n  margin-bottom: 10px;\n  vertical-align: middle;\n  &:first-child {\n    margin-left: 0;\n  }\n}\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  border: 0;\n  padding: 0;\n  background: none;\n  @include box-shadow(0);\n}\n\n// wraps credit card icons\n\n.cc {\n  margin-top: 8px;\n  padding-bottom: 10px;\n}\n\n// paid membership options\n\nul.membership-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  vertical-align: top;\n  li.membership {\n    vertical-align: top;\n    display: block;\n    float: left;\n    margin: 0 2% 1.22% 0;\n    width: 32%;\n    height: 250px;\n    &:nth-child(3n) {\n      margin-right: 0;\n    }\n    .buy {\n      position: absolute;\n      width: 88px;\n      bottom: 15px;\n      margin-left: -44px;\n      left: 50%;\n    }\n  }\n}\n\n// featured content slider\n\n.page-features {\n  position: relative;\n  margin: 35px 0 50px 0;\n  .features-headline {\n    font-size: 36px;\n    line-height: 40px;\n    padding: 15px 65px;\n    top: 41%;\n  }\n  .single-feature, .multiple-features{\n    height: 455px;\n  }\n}\n\n.flex-direction-nav {\n  top: 39%;\n}\n\n.flex-prev, .flex-next {\n  display: block;\n  height: 63px;\n  font-size: 44px;\n  border: $flex-border;\n  color: $flex-color;\n  padding: px;\n}\n.flex-prev{\n  left: 10px;\n}\n.flex-next{\n  right: 10px;\n}\n\n// inline sign in form\n\n.user-session-form-container {\n  .oauth-links {\n   margin-bottom: 0;\n  }\n  .sign-in-with-email, .sign-up {\n    border-left: 1px solid #ccc;\n    padding-left: 4.762431%;\n    position: relative;\n  }\n}\n\n.or-button{\n  display: block;\n}\n\n.review-rules {\n  float: right;\n  font-size: 12px;\n  padding: 0;\n}\n\n// page specific styles\n\n.page-user-sessions-new-wide, .page-users-accounts-new-wide, .page-users-password-resets-new-wide, .page-users-passwords-new-wide {\n  .onecolumn-container {\n    margin: 0 auto;\n    margin-top: 0px;\n    width: 100%;\n    border-bottom: 0;\n  }\n  footer {\n    margin: 0 auto;\n    width: 100%;\n  }\n}\n\n.page-pages-show-voter-registration .iframe-wrapper {\n  left: 0;\n  width: 100%;\n}\n\n#event_rsvp_guests_count, input.quantity, #signup_donations_to_raise_amount {\n  width: 25%;\n}\n\n.suggestion-tag-list {\n  li {\n    margin: 15px 15px 10px 0;\n  }\n}\n\ninput#donation_amount_other {\n  width: 30%;\n}\n\n.distance {\n  .within {\n    position: relative;\n    top: 2px;\n    display: inline;\n    padding-right: 5px;\n  }\n}\n\n.page-user-sessions-new-wide {\n  h2 {\n    font-size: 31.5px;\n    line-height: 35px;\n  }\n}\n\n// inline formatting for name, activity type and date in page stream for tablet and desktop view\n\nul#page-stream {\n  li.activity  {\n    span + a {\n    display: inline;\n    } \n  }\n  .activity-time {\n    display: inline;\n  }\n  .timeago {\n    display: inline;\n    padding-right: 0;\n    float: none;\n    font-size: 65%;\n    color: inherit;\n  }\n  .activity_links a {\n    display: inline;\n  }\n  .activity_content {\n    clear: none;\n  }\n}\n\n\nul.homepage_excerpt-list{\n  li{\n    .left{\n      width: 50%;\n      padding-right: 20px;\n      float: left;\n    }\n    .right{\n      width: 50%;\n      padding-left: 20px;\n      float: left;\n      border-left: 1px solid $theme-color-3;\n    }\n  }\n}\n\n.blog{\n  .span7{\n    width: 59.94475138121547% !important;\n    margin-left: 0 !important;\n    display: table-cell !important;\n    float: none !important;\n    vertical-align: top;\n    padding-left: 10px;\n  }\n  .span5{\n    display: table-cell !important;\n    float: none !important;\n  }\n  .row-fluid{\n    display: table;\n    table-layout: fixed;\n  }\n  .post-image{\n    height: 365px;\n  }\n  h3{\n    font-family: $font;\n    text-transform: none;\n    font-size: 30px;\n    line-height: 34px;\n    margin-bottom: 10px;\n    color: black;\n  }\n  .read-more, .read_more{\n    display: inline-block;\n    font-style: inherit;\n    a{\n      color: $theme-color-4;\n    }\n  }\n  .icon-button{\n    background: transparent;\n    color: $theme-color-4;\n    padding-left: 0;\n    i{\n      width: 25px;\n      height: 25px;\n      background: $icon-button-bg;\n      @include border-radius(25px);\n      overflow: hidden;\n      text-align: center;\n      margin-right: 8px;\n    }\n  }\n  hr{\n    margin: 50px 0;\n  }\n}\n\n.page-type-donation{\n  .left{\n    width: 31.914893617021278%;\n    float: left;\n  }\n  .right{\n    width: 65.95744680851064%;\n    margin-left: 2.127659574468085%;\n    float: left;\n  }\n}\n\n.page-pages-show-petition-wide, .page-pages-show-moneybomb-wide, .page-pages-show-feedback-wide, .page-pages-show-endorsement-wide, .page-pages-show-signup-wide, .page-pages-show-volunteer-wide, .page-pages-show-vote-pledge-wide, .page-pages-show-survey-wide{\n  .left{\n    width: 40.42553191489362%;\n    float: left;\n  }\n  .right{\n    width: 57.44680851063829%;\n    margin-left: 2.127659574468085%;\n    float: left;\n  }\n}\n\n// page specific styles\n\n.content-pages-show-blog-post, .content-pages-show-blog-post-wide{\n  font-size: 18px;\n  line-height: 26px;\n}\n\n.tablet-visible {\n  display: none;\n}\n\n// Tablet only\n@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {\n\n  .radio-inline, .checkbox-inline {\n    input[type=\"radio\"], input[type=\"checkbox\"] {\n      display: none;\n      margin: 0 5px 0 10px !important;\n    }\n    input[type=\"radio\"]:checked+label, input[type=\"checkbox\"]:checked+label {\n      background-color: $theme-color-1;\n      color: #fff;\n    }\n    label.radio, label.checkbox {\n      .option_label {\n        display: block;\n      }\n      background-color: $theme-color-2;\n      color: $theme-color-4;\n      display: inline-block;\n      width: 80px;\n      padding: 15px 5px;\n      font-family: $headline-font;\n      font-weight: bold;\n      font-size: 19px;\n      text-align: center;\n      margin: 5px 5px 10px 0;\n      cursor: pointer;\n      outline: none;\n    }\n    label.checkbox {\n      padding: 5px;\n      height: 30px;\n      font-size: 16px;\n      margin: 5px 5px 0 0;\n    }\n    &.checkbox-inline {\n      vertical-align: middle;\n      li {\n        width: 100%;\n        vertical-align: middle;\n        label {\n          width: 100%;\n        }\n      }\n    }\n  }\n\n  .distance .within {\n    display: block;\n    margin-bottom: 1em;\n  }\n\n// off canvas nav to be used on tablets, since drop downs don't work on touch devices\n\n  .nav-container {\n    display:none;\n  }\n\n  nav {\n    @include mobile-nav;\n    float: none;\n    margin: 0;\n    li {\n      margin: 0;\n      padding: 0;\n      @include border-radius(0);\n      line-height: 21px;\n      &.active, &.drop {\n        background-color: $theme-color-4;\n        border-bottom: 1px solid darken($theme-color-4, 15);\n        & > a {\n          color: #fff;\n        }\n      }\n      a {\n        padding: .8em;\n      }\n    }\n    .sub {\n      position: static;\n      width: 100%;\n      padding: 0;\n      li {\n        border-bottom: 1px solid darken($theme-color-4, 15);\n        background-color: darken($theme-color-4, 5);\n        &:last-child {\n          margin-bottom: 0;\n        }\n        a {\n          padding: 12px;\n          color: #ccc;\n        }\n        &.mobile-visible {\n          display: block;\n        }\n      }\n    }\n  }\n\n  .menu-link {\n    display: block;\n    margin-right: 20px;\n  }\n\n  .wrap.active {\n    left: 16em;\n  }\n\n  .supporter-nav li a {\n    font-size:.85em;\n    span, i {\n      font-size: 1.176em;\n    }\n  }\n\n// javascript is used to wrap all iframes in a span called responsive-embed-wrapper to make them responsive.\n// once the iframe is wrapped in said span, it will be shown.\n\n  iframe[src *= 'youtube'] {\n    display: none;\n  }\n\n  .responsive-embed-wrapper iframe {\n    display: block;\n  }\n\n  .fb-like-box iframe {\n    display: block;\n  }\n\n  header {\n    padding: 24px 0;\n    max-width: 78%;\n    @each $current-headline-font in $headline-font {\n      @if $current-headline-font == 'Josefin Sans' {\n        padding-top: 31px;\n      }\n    }\n  }\n\n  .header-signup .email-signup {\n    margin-top: 27px;\n  }\n\n// replaces the subnav with breadcrumbs, as dropdowns don't work in touch devices\n\n  .tablet-visible {\n    display: block;\n  }\n\n  .desktop-visible {\n    .subnav-container {\n      display: none;\n    }\n  }\n}\n\n// Desktop above 1140px styles\n\n@media only screen and (min-width: 1140px) {\n\n  // maximum side width container\n\n  .width-container {\n    width: 1026px; /* 1140px - 10% for margins */\n    margin: 0 auto;\n  }\n\n  // paid membership options\n\n  ul.membership-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    text-align: center;\n    li.membership {\n      position: relative;\n      display: block;\n      float: left;\n      margin: 0 2% 1.22% 0;\n      width: 32%;\n      text-align: center;\n      list-style: none;\n      background-color: $ltgrey;\n      @include border-radius(2px);\n      padding: 15px;\n      height: 250px;\n      .membership-bottom {\n        background-color: #444;\n        color: #ccc;\n      }\n      .membership-blurb {\n        padding: 15px 0;\n        font-size: 13px;\n        line-height: 16px;\n      }\n      .buy {\n        position: absolute;\n        width: 88px;\n        bottom: 15px;\n        margin-left: -44px;\n        left: 50%;\n      }\n      .badge {\n        font-size: 12px;\n        text-transform: uppercase;\n      }\n    }\n  }\n\n}\n\n// blog-widget border\n\n.blog-widget:nth-child(odd) {\n  padding-right: 10px;\n}\n\n.blog-post-widget {\n  display: table-cell;\n  .blog-post-widget-image {\n    background-size: cover !important;\n    display: table-cell;\n    float: none !important;\n    height: auto;\n  }\n  .blog-post-widget-right {\n    margin-left: 0 !important;\n    display: table-cell !important;\n    float: none !important;\n    vertical-align: top;\n    background-color: white;\n  }\n}\n\n// styles when the site has a background image\n\n.with-background{\n  .onecolumn-container{\n    padding: 90px;\n  }\n\n  // style for homepage blog widget \n  .blog-widget-parent {\n    display: table-cell;\n    .blog-widget {\n      display: table-cell;\n      float: none;\n      position: relative;\n      padding-bottom: 20px;\n      vertical-align:top;\n      -moz-background-clip: padding;\n      -webkit-background-clip: padding;\n      background-clip: padding-box;\n      &:nth-child(odd) {\n        padding-right: 0px;\n        border-right: 10px solid transparent;\n      }\n      &:nth-child(even) {\n        border-left: 10px solid transparent;\n      }\n      .share-bar {\n        width: 100%;\n        padding-left: 20px;\n        position: absolute;\n        bottom: 0;\n        left: 0;\n      }\n    }\n  }\n}\n\n@media only screen and (max-width : 768px) {\n  .page-pages-show-donation-wide {\n    .radio-inline {\n      label.radio {\n        min-width: 123px;\n      }\n      span:nth-child(2n) label.radio {\n        margin-right: 0;\n      }\n    }\n  }\n}\n",
+			"file": "tablet-and-desktop.scss",
+			"file_size": 18182,
+			"file_write_time": 130650521870064959,
+			"settings":
+			{
+				"buffer_size": 18208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% if page.show_stream? and request.sorta_logged_in? %}\n  {% if request.current_signup.following_page_ids contains page.id %}\n  <span class=\"addreaction\">Following Reactions</span><a href=\"{{ page.unfollow_url }}\" class=\"delete\"><i class=\"fa fa-times\"></i></a>\n  {% else %}\n  <span class=\"addreaction\">Follow Reactions</span><a href=\"{{ page.follow_url }}\" class=\"post\"><i class=\"fa fa-plus\"></i></a>\n  {% endif %}\n{% endif %}\n<span>\n</span>\nul>",
+			"file": "_page_follow.html",
+			"file_size": 426,
+			"file_write_time": 130649041970000000,
+			"settings":
+			{
+				"buffer_size": 445,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "activity_public.html",
+			"settings":
+			{
+				"buffer_size": 623,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pages_show_basic.html",
+			"settings":
+			{
+				"buffer_size": 818,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "layout.html",
+			"settings":
+			{
+				"buffer_size": 9027,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_columns_2.html",
+			"settings":
+			{
+				"buffer_size": 2256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "theme.scss",
+			"settings":
+			{
+				"buffer_size": 46596,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Publish Baseline/theme.scss",
+			"settings":
+			{
+				"buffer_size": 47292,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/G/Cloud Content/Dropbox/Dropbox/Website/Themes/theme.scss",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "/* ==============================================="
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"snippet hea",
+				"Snippet: Header"
+			],
+			[
+				"sn",
+				"Snippet: Header"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Comment"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Gi",
+				"Git: Gui"
+			],
+			[
+				"GIT",
+				"Git: Commit history"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"PA",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/Publish/Publish Theme.sublime-project",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/File_Views/File_Views.json",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/_page_tags.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/event-icon-blue.png",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/_na",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/User/Header.sublime-snippet",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/comment.py",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/_buttons.scss",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/layout.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/_columns_1.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/_columns_2.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/_breadcrumbs.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/_grid.scss",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/pages_show_basic.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/Publish/_columns_1.html",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Users/Dan/AppData/Local/Temp/Temp1_monokai-komodo-master.zip/monokai-komodo-master/README.md",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/PresenceTheme/pages_show_blog.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/HotSite/HotSite.html",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/SCSS Expander/README.md",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Sass/README.md",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/VCSTheme/.git/config",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/VCS/_breadcrumbs_mobile.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/VCSTheme/Lets Test This",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/VCSTheme/tablet-and-desktop.scss",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/VCSTheme/_columns_2.html",
+		"/N/Aware-VCS/backcountryhunters-54a99d17ebad6441f9000001/_homepage_excerpt_feedback.html",
+		"/N/Aware-VCS/backcountryhunters-54a99d17ebad6441f9000001/_forms.scss",
+		"/N/Aware-VCS/backcountryhunters-54a99d17ebad6441f9000001/map-style.css",
+		"/N/Aware-VCS/backcountryhunters-54a99d17ebad6441f9000001/layout_autoresponse.txt",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/Themes/VCS/.git/config",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/VCSTheme/_blog_latest.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/VCSTheme/_breadcrumbs.html",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Light).tmTheme.cache",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/VCSTheme/_buttons.scss",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/CSS/Comments.tmPreferences",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/CSS/Symbol List.tmPreferences",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/CSS/CSS.tmLanguage",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/User/ColorHighlighter.sublime-settings",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/ChapterImagemap/map-config.js",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/ChapterImagemap/map-interact.js",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/ChapterImagemap/map_style.css",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/ChapterImagemap/bodytest.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/ChapterImagemap/ChapterImagemap.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/ChapterImagemap/wtf.html",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/BHA-2/jquery.ui.effect.min.js",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/BHA-2/_buttons.scss",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/BHA-2/_signup_show.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/BHA-2/_signup_follow.html",
+		"/G/Cloud Content/Dropbox/Dropbox/website/BHA-2/BHAPublisherTheme.sublime-project",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/BHA-2/pages_show_basic.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/BHA-2/pages_show_basic_wide.html",
+		"/G/Cloud Content/Dropbox/Dropbox/Website/BHA-2/BHA Theme.sublime-workspace"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"G:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\Publish,*.html,*.scss",
+			"G:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\PresenceTheme,*.html,*.scss,-G:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\PresenceTheme\\",
+			"G:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\PresenceTheme,*.html,*.scss",
+			"G:\\Cloud Content\\Dropbox\\Dropbox\\Website\\Themes\\PresenceTheme",
+			"",
+			"G:\\Cloud Content\\Dropbox\\Dropbox\\Website\\BHA-2",
+			"",
+			"<open folders>",
+			"",
+			"*.html",
+			"pages_*.html",
+			"pages*.html"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<!--",
+			"vote-pledge-form",
+			"button",
+			"$Orange",
+			"addreaction",
+			"class=subnav",
+			"icon-menu",
+			"nav",
+			"NAV",
+			"_grid.scss",
+			"grid.scss",
+			"table",
+			"comment",
+			"preferences",
+			"package control",
+			"package",
+			"display:",
+			".style",
+			"element.style",
+			"map",
+			"map_58",
+			"selectable",
+			"unselectable",
+			"comment",
+			"join",
+			"signup",
+			"Join",
+			"value= \"Join\"",
+			"value = \"Join\"",
+			"DJM",
+			"djm",
+			"join",
+			"title",
+			" {{ content_for_header }}",
+			" <div class=\"like-page\">\n      <strong>Do you like this page?</strong>\n      {% include \"like_page\" %}\n    </div>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<!-- DJM  Disabled Like on Page footers. Uncomment the following to include them... -->\n<!--     \n    <div class=\"like-page\">\n      <strong>Do you like this page?</strong>\n      {% include \"like_page\" %}\n    </div>\n\n -->\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 11,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 17032,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										158,
+										167
+									],
+									[
+										401,
+										410
+									],
+									[
+										566,
+										575
+									],
+									[
+										951,
+										962
+									],
+									[
+										1276,
+										1287
+									],
+									[
+										1740,
+										1751
+									],
+									[
+										1902,
+										1913
+									],
+									[
+										2216,
+										2227
+									],
+									[
+										2363,
+										2374
+									],
+									[
+										2532,
+										2543
+									],
+									[
+										2778,
+										2789
+									],
+									[
+										2919,
+										2930
+									],
+									[
+										3082,
+										3093
+									],
+									[
+										3336,
+										3347
+									],
+									[
+										3685,
+										3696
+									],
+									[
+										4112,
+										4123
+									],
+									[
+										4461,
+										4472
+									],
+									[
+										4858,
+										4869
+									],
+									[
+										5300,
+										5311
+									],
+									[
+										5605,
+										5616
+									],
+									[
+										5910,
+										5921
+									],
+									[
+										6215,
+										6226
+									],
+									[
+										6519,
+										6530
+									],
+									[
+										6824,
+										6835
+									],
+									[
+										7159,
+										7170
+									],
+									[
+										7568,
+										7579
+									],
+									[
+										7893,
+										7904
+									],
+									[
+										8374,
+										8385
+									],
+									[
+										8536,
+										8547
+									],
+									[
+										8867,
+										8878
+									],
+									[
+										9014,
+										9025
+									],
+									[
+										9183,
+										9194
+									],
+									[
+										9446,
+										9457
+									],
+									[
+										9587,
+										9598
+									],
+									[
+										9750,
+										9761
+									],
+									[
+										10021,
+										10032
+									],
+									[
+										10370,
+										10381
+									],
+									[
+										10814,
+										10825
+									],
+									[
+										11163,
+										11174
+									],
+									[
+										11577,
+										11588
+									],
+									[
+										12036,
+										12047
+									],
+									[
+										12341,
+										12352
+									],
+									[
+										12646,
+										12657
+									],
+									[
+										12951,
+										12962
+									],
+									[
+										13255,
+										13266
+									],
+									[
+										13560,
+										13571
+									],
+									[
+										13912,
+										13923
+									],
+									[
+										14269,
+										14280
+									],
+									[
+										14283,
+										14294
+									],
+									[
+										14482,
+										14493
+									],
+									[
+										14496,
+										14507
+									],
+									[
+										14766,
+										14782
+									],
+									[
+										15087,
+										15103
+									],
+									[
+										15395,
+										15411
+									],
+									[
+										15722,
+										15738
+									],
+									[
+										15929,
+										15945
+									],
+									[
+										16267,
+										16283
+									],
+									[
+										16592,
+										16608
+									],
+									[
+										16936,
+										16952
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								15488,
+								15488
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"detect_indentation": false,
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"output_tag": 4,
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1152.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pages_show_vote_pledge_wide.html",
+					"settings":
+					{
+						"buffer_size": 3596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1991,
+								1987
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_buttons.scss",
+					"settings":
+					{
+						"buffer_size": 3629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								221,
+								221
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 30564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "-state chapter buttons",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Dan/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 13677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "tablet-and-desktop.scss",
+					"settings":
+					{
+						"buffer_size": 18208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								971,
+								955
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "_page_follow.html",
+					"settings":
+					{
+						"buffer_size": 445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								445,
+								445
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "activity_public.html",
+					"settings":
+					{
+						"buffer_size": 623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "pages_show_basic.html",
+					"settings":
+					{
+						"buffer_size": 818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "layout.html",
+					"settings":
+					{
+						"buffer_size": 9027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "_columns_2.html",
+					"settings":
+					{
+						"buffer_size": 2256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1039,
+								1168
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "theme.scss",
+					"settings":
+					{
+						"buffer_size": 46596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Publish Baseline/theme.scss",
+					"settings":
+					{
+						"buffer_size": 47292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47292,
+								47292
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 44421.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/G/Cloud Content/Dropbox/Dropbox/Website/Themes/theme.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "/* ===============================================",
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 414.0,
+	"status_bar_visible": true
+}

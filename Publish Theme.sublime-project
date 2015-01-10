@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": "/G/Cloud Content/Dropbox/Dropbox/Website/Themes/Publish",
+			"folder_exclude_patterns": ["*"],
+			 "file_exclude_patterns": ["*.png"]
+		}
+	]
+}

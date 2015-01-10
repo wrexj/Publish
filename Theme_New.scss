@@ -1,17 +1,28 @@
+/* ============================================================================
+   This is a mobile first stylesheet and it applies to all screen widths.
+   For changes to the desktop or tablet viewports, see tablet-and-desktop.scss.
+   ============================================================================ */
+
+//* style variables *//
+
+// headline font
 $headline-font: "Bree Serif", serif;
 $title-font-weight: 700;
+
+// alternative headline font
 $headline-font-alt: "Bree Serif", sans-serif;
+
+// main font
 $font: "Lato", sans-serif;
+
 $brown: #766341;
-$burgundy: #601B28;
-$orange: #c63;
-$turquoise: #3A6F8F;
-$tan: #d4c89e;
+$burgundy: #601B28; 
+$orange: #f04f23;
+$turquoise: #53cfd7;
 $grey: #ccc;
 $ltgrey: #f2f2f2;
 $charcoal: #656565;
-$orange: #f93c04;
-$red: #5C8726;
+$red: #f93c04;
 $green: #5C8726;
 $bhagreen: #264926;
 $black: #000;
@@ -20,55 +31,94 @@ $facebook: #3b5998;
 $twitter: #00aced;
 $header-color: #fff;
 $header-text-color: #000;
-$theme-color-1: $bhagreen;
+
+$theme-color-1: $green;
 $theme-color-2: $black;
 $theme-color-3: $tan;
 $theme-color-4: $black;
+
+
+//general site settings
 $site-bg: #fbfbf3;
 $site-color: #000;
 $desktop-site-bg: #fbfbf3;
 $desktop-site-color: #000;
 $onecolumn-bg: white;
 $twocolumn-color: #000;
-$footer-bg: $charcoal;
+$footer-bg: #1b194a;
 $headline-weight: 500;
 $check_radio_sheet: url(check_radio_sheet_navy.png);
 $progress: #ffa38a;
 $headline-transform: none;
 $opaque-bg-rgb: rgb(212, 200, 158);
 $opaque-bg-rgba: rgba(212, 200, 158, 0.8);
+
+//blog share bar
 $share-bar-bg: transparent;
-$icon-button-bg: $grey;
+$icon-button-bg: $red;
 $icon-button-border: 2px solid #f93c04;
 $icon-button-color: #fff;
-$byline-image-border: $orange;
-$delete: $orange;
-$delete-border: 2px solid $orange;
+
+// blog byline and follow buttons
+$byline-image-border: $red;
+$delete: $red;
+$delete-border: 2px solid $red;
 $follow: #d4c89e;
-$follow-color: $grey;
+$follow-color: #fff;
 $follow-border: 2px solid #000;
-$flex-background: $orange;
-$flex-border: 4px solid $orange;
+
+// page features
+$flex-background: $red;
+$flex-border: 4px solid $red;
 $flex-color: #fff;
-$supporter-nav-button-one: $bhagreen;
-$supporter-nav-color-one: $white;
-$supporter-nav-button-two: $burgundy;
-$supporter-nav-color-two: $white;
-$supporter-nav-button-three: $tan;
-$supporter-nav-color-three: $white;
+
+
+// supporter nav buttons
+$supporter-nav-button-one: $grey;
+$supporter-nav-color-one: #000;
+$supporter-nav-button-two: $theme-color-3;
+$supporter-nav-color-two: $theme-color-4;
+$supporter-nav-button-three: #000;
+$supporter-nav-color-three: #fff;
+
+//turquoise specific fields
 $feature-border: 0;
 $supporter-nav-button-border: 0;
+
+// form input area focus color
 $theme-color-5: rgba(141, 207, 215, 0.6);
-$orange: #f93c04;
-$bhagreen: #619114;
+
+// general success and error colors
+$red: #f93c04;
+$green: #619114;
+// form input area focus color
+$theme-color-5: rgba(141, 207, 215, 0.6);
+
+// general success and error colors
+$red: #f93c04;
+$green: #619114;
+
+// mixins
+
 @mixin transparent-bg(){
+  /* Fallback for web browsers that doesn't support RGBa */
   background: $opaque-bg-rgb;
-    background: $opaque-bg-rgba;
+  /* RGBa with 0.6 opacity */
+  background: $opaque-bg-rgba;
+  /* For IE 5.5 - 7*/
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
+  /* For IE 8*/
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
 }
+
+//* main responsive components *//
+
 @import "custom-mixins";
+
+// border-radius mixin
 @import "border_radius";
+
+// compass css3 mixins
 @import "compass/css3";
 
 // countdown widget for moneybomb page
@@ -208,7 +258,7 @@ h6 {
 // general link styles
 
 a {
-  color: $orange;
+  color: $theme-color-1;
   text-decoration: none;
   outline: none;
 }
@@ -685,7 +735,7 @@ nav {
     background-color: $twitter;
   }
   .fa-envelope{
-    background-color: $orange;
+    background-color: $red;
   }
 }
 
@@ -711,7 +761,7 @@ nav {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -webkit-appearance: none;
-    width: 63%;
+    width: 63%; 
     @include border-radius-top-right(0px);
     @include border-radius-bottom-right(0px);
     border-right: 0;
@@ -803,7 +853,7 @@ nav {
   }
   .linked-signup-name {
     color: $theme-color-4;
-    a{
+    a{ 
       color: $theme-color-4;
     }
   }
@@ -815,7 +865,7 @@ ul#page-stream {
   li.activity  {
     span + a {
     display: block;
-    }
+    } 
   }
   .activity-time {
     display: block;
@@ -1455,12 +1505,12 @@ footer {
 
 .off-button-small {
   font-size: 11px;
-  color: $orange;
+  color: $red;
 }
 
 .on-button-small {
   font-size: 11px;
-  color: $bhagreen;
+  color: $green;
 }
 
 .subhead {
@@ -1472,7 +1522,7 @@ footer {
 // applied to alerts or warnings
 
 .red {
-  color: $orange;
+  color: $red;
 }
 
 small {
@@ -1632,7 +1682,7 @@ small {
 
 .page-tag {
   text-indent: 40px;
-  background-color: $orange;
+  background-color: $theme-color-1;
   font-size: 11px;
   color: white;
   padding: 2px 5px;
@@ -1965,7 +2015,7 @@ h4.expander-head {
     color: white;
   }
   .error {
-    background-color: $orange;
+    background-color: $red;
     color: white;
   }
   .info {
@@ -2343,8 +2393,8 @@ h4.expander-head {
 }
 
 .flex-prev, .flex-next {
-  display: block;
-  position: absolute;
+  display: block; 
+  position: absolute; 
   top: 41%;
   z-index: 9999;
   font-size: 36px;
@@ -2389,7 +2439,7 @@ h4.expander-head {
 }
 
 .form-errors {
-  background-color: $orange;
+  background-color: $red;
   @include border-radius(2px);
   color: #fff;
   font-size: 13px;
@@ -2447,7 +2497,7 @@ ul.homepage_excerpt-list {
     }
     .progress {
       margin-bottom: 0;
-    }
+    } 
     ul.question-list {
       margin: 15px 0 0 15px;
       border: none;
@@ -2632,7 +2682,7 @@ ul.homepage_excerpt-list {
     .excerpt-type{
       a{
         color: black;
-      }
+      } 
     }
   }
 
