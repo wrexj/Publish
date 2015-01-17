@@ -5,8 +5,8 @@ a:hover{text-decoration: none;}
 	max-width:1920px;
 	margin:0 auto;
 	padding:0px 0;
-	background-color:#116F13;
-	/*background-color:transparent;*/
+/*	background-color:#ffffff;*/
+	background-color:transparent;
 	min-width:220px; }
 
 svg{
@@ -83,7 +83,7 @@ svg{
 	-webkit-user-select:none;
 }
 .tip{
-	display:block;
+	display:none;
 	padding:5px;
 	border:1px solid #EBECED;
 	color:#edeef0;
