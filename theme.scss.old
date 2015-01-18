@@ -1,125 +1,74 @@
-// style variables *//
-
-// headline font
-$headline-font: "Oswald", sans-serif;
+$headline-font: "Bree Serif", serif;
 $title-font-weight: 700;
-
-// alternative headline font
-$headline-font-alt: "Oswald", sans-serif;
-
-// main font
-$font: "Droid Serif", serif;
-
-// general success and error colors
-$red: #b94a48;
-$green: #619114;
-
-$black: #000;
-$blue: #3A6F8F;
+$headline-font-alt: "Bree Serif", sans-serif;
+$font: "Lato", sans-serif;
 $brown: #766341;
 $burgundy: #601B28;
-$charcoal: #656565;
-$green1: #5C8726;
-//$green: #619114; 
-$greenbha: #124d32;
-$grey: #ccc;  //Nave Hover
-$ltgrey: #f2f2f2;
-$orange-glow: #f93c04;
 $orange: #c63;
-//$red: #d41116;
+$turquoise: #3A6F8F;
 $tan: #d4c89e;
-$turquoise: #53cfd7;
+$grey: #ccc;
+$ltgrey: #f2f2f2;
+$charcoal: #656565;
+$orange: #f93c04;
+$red: #5C8726;
+$green: #5C8726;
+$bhagreen: #264926;
+$black: #000;
 $white: #fff;
-$off-white: #fbfbf3;
-
 $facebook: #3b5998;
 $twitter: #00aced;
-
-$header-color: $green1;
+$header-color: #fff;
 $header-text-color: #000;
-
-$site-bg: $off-white;
-$site-color: $black;
-$desktop-site-bg: $off-white;
-$desktop-site-color: $black;
-
-// custom colors
-$theme-color-1: $orange-glow;
-$theme-color-2: $burgundy;
-$theme-color-3: $green1;
-$theme-color-4: $charcoal;
-
-
-//general site settings
-$site-bg: #fff;
+$theme-color-1: $bhagreen;
+$theme-color-2: $black;
+$theme-color-3: $tan;
+$theme-color-4: $black;
+$site-bg: 6E9BC5
 $site-color: #000;
-$desktop-site-bg: #fff;
+$desktop-site-bg: #fbfbf3;
 $desktop-site-color: #000;
-$onecolumn-bg: #fff;
+$onecolumn-bg: white;
 $twocolumn-color: #000;
-$footer-bg: #000;
-$headline-weight: 700;
-$check_radio_sheet: url(check_radio_sheet.png);
-$progress: $theme-color-4;
-$headline-transform: uppercase;
-$opaque-bg-rgb: rgb(255, 255, 255);
-$opaque-bg-rgba: rgba(255, 255, 255, 0.8);
-
-//blog share bar
-$share-bar-bg: $grey;
-$icon-button-bg: $theme-color-4;
-$icon-button-border: 0;
+$footer-bg: $charcoal;
+$headline-weight: 500;
+$check_radio_sheet: url(check_radio_sheet_navy.png);
+$progress: #ffa38a;
+$headline-transform: none;
+$opaque-bg-rgb: rgb(212, 200, 158);
+$opaque-bg-rgba: rgba(212, 200, 158, 0.8);
+$share-bar-bg: transparent;
+$icon-button-bg: $grey;
+$icon-button-border: 2px solid #f93c04;
 $icon-button-color: #fff;
-
-// blog byline and follow buttons
-$byline-image-border: #fff;
-$delete: $red;
-$delete-border: 2px solid $red;
-$follow: $charcoal;
-$follow-color: #fff;
-$follow-border: 2px solid #fff;
-
-// page features
-$flex-background: transparent;
-$flex-border: 3px solid #fff;
+$byline-image-border: $orange;
+$delete: $orange;
+$delete-border: 2px solid $orange;
+$follow: #d4c89e;
+$follow-color: $grey;
+$follow-border: 2px solid #000;
+$flex-background: $orange;
+$flex-border: 4px solid $orange;
 $flex-color: #fff;
-
-
-// supporter nav buttons
-$supporter-nav-button-one: $burgundy;
-$supporter-nav-color-one: #000;
-$supporter-nav-button-two: $tan;
-$supporter-nav-color-two: $theme-color-4;
-$supporter-nav-button-three: #000;
-$supporter-nav-color-three: $greenbha;
-
-//turquoise specific fields
+$supporter-nav-button-one: $bhagreen;
+$supporter-nav-color-one: $white;
+$supporter-nav-button-two: $burgundy;
+$supporter-nav-color-two: $white;
+$supporter-nav-button-three: $tan;
+$supporter-nav-color-three: $white;
 $feature-border: 0;
 $supporter-nav-button-border: 0;
-
-// form input area focus color
 $theme-color-5: rgba(141, 207, 215, 0.6);
-
-// general success and error colors
-$red: #d41116;
-$green: #619114;
-
-
+$orange: #f93c04;
+$bhagreen: #619114;
 @mixin transparent-bg(){
   background: $opaque-bg-rgb;
     background: $opaque-bg-rgba;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
 }
-
-//* main responsive components *//
-
 @import "custom-mixins";
-
-// border-radius mixin
 @import "border_radius";
-
-// compass css3 mixins
 @import "compass/css3";
 
 // countdown widget for moneybomb page
@@ -259,7 +208,7 @@ h6 {
 // general link styles
 
 a {
-  color: $theme-color-1;
+  color: $orange;
   text-decoration: none;
   outline: none;
 }
@@ -736,7 +685,7 @@ nav {
     background-color: $twitter;
   }
   .fa-envelope{
-    background-color: $red;
+    background-color: $orange;
   }
 }
 
@@ -762,7 +711,7 @@ nav {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -webkit-appearance: none;
-    width: 63%; 
+    width: 63%;
     @include border-radius-top-right(0px);
     @include border-radius-bottom-right(0px);
     border-right: 0;
@@ -854,7 +803,7 @@ nav {
   }
   .linked-signup-name {
     color: $theme-color-4;
-    a{ 
+    a{
       color: $theme-color-4;
     }
   }
@@ -866,7 +815,7 @@ ul#page-stream {
   li.activity  {
     span + a {
     display: block;
-    } 
+    }
   }
   .activity-time {
     display: block;
@@ -1506,12 +1455,12 @@ footer {
 
 .off-button-small {
   font-size: 11px;
-  color: $red;
+  color: $orange;
 }
 
 .on-button-small {
   font-size: 11px;
-  color: $green;
+  color: $bhagreen;
 }
 
 .subhead {
@@ -1523,7 +1472,7 @@ footer {
 // applied to alerts or warnings
 
 .red {
-  color: $red;
+  color: $orange;
 }
 
 small {
@@ -1683,7 +1632,7 @@ small {
 
 .page-tag {
   text-indent: 40px;
-  background-color: $theme-color-1;
+  background-color: $orange;
   font-size: 11px;
   color: white;
   padding: 2px 5px;
@@ -1726,7 +1675,7 @@ ul.membership-list {
     padding: 15px;
     display: inline-block;
     margin: 0 10px 15px 0;
-    width: 100%; // 236px ÷ 984px
+    width: 100%; // 236px Ã· 984px
     .membership-bottom {
       background-color: #444;
       color: #ccc;
@@ -2016,7 +1965,7 @@ h4.expander-head {
     color: white;
   }
   .error {
-    background-color: $red;
+    background-color: $orange;
     color: white;
   }
   .info {
@@ -2394,8 +2343,8 @@ h4.expander-head {
 }
 
 .flex-prev, .flex-next {
-  display: block; 
-  position: absolute; 
+  display: block;
+  position: absolute;
   top: 41%;
   z-index: 9999;
   font-size: 36px;
@@ -2440,7 +2389,7 @@ h4.expander-head {
 }
 
 .form-errors {
-  background-color: $red;
+  background-color: $orange;
   @include border-radius(2px);
   color: #fff;
   font-size: 13px;
@@ -2498,7 +2447,7 @@ ul.homepage_excerpt-list {
     }
     .progress {
       margin-bottom: 0;
-    } 
+    }
     ul.question-list {
       margin: 15px 0 0 15px;
       border: none;
@@ -2683,7 +2632,7 @@ ul.homepage_excerpt-list {
     .excerpt-type{
       a{
         color: black;
-      } 
+      }
     }
   }
 
@@ -2741,144 +2690,3 @@ ul.homepage_excerpt-list {
     }
   }
 }
-
-// homepage
-.home-headline {
-	h1 {
-		text-align: center;
-		color: $theme-color-1;
-		padding: 50px 0;
-		text-transform: uppercase;
-		font-size: 34px;
-	}
-}
-.fb-like-box {
-	background: white;
-}
-.homepage {
-	#middle {
-		margin-top: 54px;
-	}
-	.twocolumn-container .left-column {
-		padding: 20px 10px;
-	}
-}
-.social-side {
-	margin: 25px auto;
-	max-width: 90%;
-	h2 {
-		margin-bottom: 10px;
-		font-size: 20px;
-		color: #343434;
-		text-align: center;
-		text-transform: uppercase;
-	}
-	ul {
-		padding: 0;
-		margin: 0;
-		li {
-			display: inline-block;
-			text-align: center;
-			width: 32%;
-			padding: 6px 0;
-		}
-	}
-}
-.blog-post {
-	background: whitesmoke;
-	max-width: 31.3%;
-	min-height: 415px;
-	float: left;
-	margin: 7px;
-	padding: 10px;
-	&:nth-child(4) {
-		clear: left;
-	}
-	.image {
-		img {
-			min-width: 100%;
-		}
-	}
-	.blog-teaser {
-		font-size: 12px;
-		font-weight: 300;
-		line-height: 15px;
-	}
-	.byline {
-		text-transform: uppercase;
-		font-size: 9px;
-		font-weight: 300;
-		line-height: 15px;
-		margin-top: 5px;
-		color: #171717;
-		margin-top: -11px;
-		margin-bottom: 6px;
-	}
-	.tags {
-		font-size: 9px;
-		margin-bottom: 6px;
-		a {
-			text-transform: uppercase;
-			color: white;
-			background: $theme-color-1;
-			padding: 4px;
-			margin-left: 2px;
-		}
-		a:hover {
-			background-color: lighten($theme-color-1, 10%);
-		}
-	}
-	.headline {
-		margin-top: 10px;
-		font-size: 16px;
-	}
-	.continue_reading {
-		text-align: center;
-		margin: 20px 0 5px 0;
-		.button {
-			border-radius: 0;
-			background-color: $theme-color-1;
-			padding: 8px 15px;
-			min-height: 0;
-			font-size: 12px;
-		}
-		.button:hover {
-			background-color: lighten($theme-color-1, 10%);
-		}
-	}
-}
-.take-action {
-	max-width: 95%;
-	padding: 29px 0;
-	margin: 0 auto;
-	border-bottom: 1px solid #c2c2c2;
-	.headline {
-		a {
-			font-size: 28px;
-			font-weight: 300;
-		}
-	}
-	.button {
-		border-radius: 0;
-		background-color: $theme-color-1;
-		font-size: 18px;
-	}
-}
-
-// Mission Statement
-
-.hompage-mission-panel{
-  //margin-top: 25px;
-  background: $ltgrey;
-  padding: 15px;
-  //margin-bottom: 25px;
-  h4{
-    //text-transform: $headline-transform;
-    border-bottom: 2px solid $theme-color-4;
-    padding: 15px 0;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-}
-
-
