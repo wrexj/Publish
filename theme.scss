@@ -1,8 +1,14 @@
-// style variables *//
+/* ===================================================================================
+   This is the main stylesheet. It applies to viewports below 768px.
+   This theme applies to all screen.
+   =================================================================================== */
+
+//----------------------------------------------------
+// style variables common to both mobile and desktop
+//----------------------------------------------------
 
 // headline font
 $headline-font: "Oswald", sans-serif;
-$title-font-weight: 700;
 
 // alternative headline font
 $headline-font-alt: "Oswald", sans-serif;
@@ -10,27 +16,35 @@ $headline-font-alt: "Oswald", sans-serif;
 // main font
 $font: "Droid Serif", serif;
 
-// general success and error colors
-$red: #b94a48;
-$green: #619114;
-
 $black: #000;
 $blue: #3A6F8F;
 $brown: #766341;
 $burgundy: #601B28;
 $charcoal: #656565;
 $green1: #5C8726;
-//$green: #619114; 
+$green: #619114; // general success and error colors
 $greenbha: #124d32;
 $grey: #ccc;  //Nave Hover
 $ltgrey: #f2f2f2;
 $orange-glow: #f93c04;
 $orange: #c63;
-//$red: #d41116;
+$red: #b94a48; // general success and error colors
 $tan: #d4c89e;
 $turquoise: #53cfd7;
 $white: #fff;
 $off-white: #fbfbf3;
+
+// custom colors
+$theme-color-1: $orange-glow;
+$theme-color-2: $burgundy;
+$theme-color-3: $green1;
+$theme-color-4: $charcoal;
+
+$desktop-site-bg: $off-white;
+$desktop-site-color: $black;
+
+$icon-button-bg: $theme-color-4; //blog share bar
+// ----------------------------------------------------
 
 $facebook: #3b5998;
 $twitter: #00aced;
@@ -40,14 +54,8 @@ $header-text-color: #000;
 
 $site-bg: $off-white;
 $site-color: $black;
-$desktop-site-bg: $off-white;
-$desktop-site-color: $black;
 
-// custom colors
-$theme-color-1: $orange-glow;
-$theme-color-2: $burgundy;
-$theme-color-3: $green1;
-$theme-color-4: $charcoal;
+$title-font-weight: 700; //For Headline
 
 
 //general site settings
@@ -67,7 +75,6 @@ $opaque-bg-rgba: rgba(255, 255, 255, 0.8);
 
 //blog share bar
 $share-bar-bg: $grey;
-$icon-button-bg: $theme-color-4;
 $icon-button-border: 0;
 $icon-button-color: #fff;
 
@@ -82,7 +89,7 @@ $follow-border: 2px solid #fff;
 // page features
 $flex-background: transparent;
 $flex-border: 3px solid #fff;
-$flex-color: #fff;
+$flex-color: $white;
 
 
 // supporter nav buttons
@@ -99,10 +106,6 @@ $supporter-nav-button-border: 0;
 
 // form input area focus color
 $theme-color-5: rgba(141, 207, 215, 0.6);
-
-// general success and error colors
-$red: #d41116;
-$green: #619114;
 
 
 @mixin transparent-bg(){

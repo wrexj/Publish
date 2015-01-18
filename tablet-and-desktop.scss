@@ -3,7 +3,9 @@
    For the mobile first stylesheet which applies to all screen widths, see theme.scss.
    =================================================================================== */
 
-//* style variables *//
+//----------------------------------------------------
+// style variables common to both mobile and desktop
+//----------------------------------------------------
 
 // headline font
 $headline-font: "Oswald", sans-serif;
@@ -13,54 +15,52 @@ $headline-font-alt: "Oswald", sans-serif;
 
 // main font
 $font: "Droid Serif", serif;
-//----------------------------------------------------
+
 $black: #000;
 $blue: #3A6F8F;
 $brown: #766341;
 $burgundy: #601B28;
 $charcoal: #656565;
 $green1: #5C8726;
-$green: green; // general success and error colors
+$green: #619114; // general success and error colors
 $greenbha: #124d32;
 $grey: #ccc;  //Nave Hover
 $ltgrey: #f2f2f2;
 $orange-glow: #f93c04;
 $orange: #c63;
-$red: red; // general success and error colors
+$red: #b94a48; // general success and error colors
 $tan: #d4c89e;
 $turquoise: #53cfd7;
 $white: #fff;
 $off-white: #fbfbf3;
 
-$onecolumn-bg: $tan ;
-$twocolumn-color: $black;
-
-
-$nav-hover: $green;
-$nav-hover-color: $white;
-$nav-background: $greenbha;
-$nav-color: $white;
-$desktop-site-bg: $off-white;
-$desktop-site-color: $black;
-$nav-container-border: 0;
-
-$headline-transform: uppercase;
-$flex-background: transparent;
-$flex-border: 3px solid #fff;
-$flex-color: $white;
-
+// custom colors
 $theme-color-1: $orange-glow;
 $theme-color-2: $burgundy;
 $theme-color-3: $green1;
 $theme-color-4: $charcoal;
 
-$icon-button-bg :$grey;
+$desktop-site-bg: $off-white;
+$desktop-site-color: $black;
+
+$icon-button-bg: $theme-color-4; //blog share bar
+// ----------------------------------------------------
+
+$onecolumn-bg: $tan ;
+$twocolumn-color: $black;
+$nav-hover: $green;
+$nav-hover-color: $white;
+$nav-background: $greenbha;
+$nav-color: $white;
+$nav-container-border: 0;
+
+$headline-transform: uppercase;
 
 
 $onecolumn-container-padding: 50px 30px;
 $onecolumn-container-border: 1px solid $theme-color-3;
 
-// ----------------------------------------------------
+
 // border-radius mixin
 @import "border_radius";
 
@@ -79,8 +79,7 @@ blockquote{
 }
 
 body {
-  background: $desktop-site-bg;
-  margin: 0;
+  background: $desktop-site-bg;  margin: 0;
   font: 15px/24px $font;
   color: $desktop-site-color;
 }
@@ -91,7 +90,6 @@ h1.title {
 }
 
 // page layout if the sidebar is turned on
-
 .onecolumn-container {
   padding: $onecolumn-container-padding;
   border: $onecolumn-container-border;
