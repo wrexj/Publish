@@ -64,14 +64,14 @@
 
   {% endif %}
 
-  {% form_for add_to_cart %}
+  {% form_for customer__cart %}
     <div class="form-wrap">
       <div class="form">
         <h4>Will you come?</h4>
         {% if request.logged_in? == false %}
           <span>Already bought tickets? <a href="{{ page.login_url_with_redirect_back }}">sign in</a></span>
         {% endif %}
-        <div class="form_errors">{% error_messages_for add_to_cart %}</div>
+        <div class="form_errors">{% error_messages_for customer__cart %}</div>
         {% for ticket_level in page.ticketed_event.ticket_levels %}
           <div class="row-fluid padtopmore ticket-level">
             <div class="span6">
@@ -86,7 +86,7 @@
               {% if ticket_level.sold_out? %}
                 <strong>sold out</strong>
               {% else %}
-                <strong>{{ ticket_level.form_quantity }}</strong>
+                {% cart_item_quantity_field customer__cart, ticket_level %}
               {% endif %}
             </div>
             <div class="span3 center">

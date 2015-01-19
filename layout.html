@@ -49,7 +49,7 @@
 </head>
 <body class="aware-theme v2-theme {{ page.page_class_name }} js {% if site.has_background_image? %}with-background{% endif %}">
   {% if site.has_header_image? %}
-    <div class="site-header" style="background: url({{ site.header_image_url_1026 }}) center no-repeat;">
+    <div class="site-header" style="background: url({{ site.header_image_url_1026 }})"width="1440" center no-repeat;">
       <div class="width-container">
         <div class="site-subheadline">
           {{ site.subheadline }}
@@ -57,7 +57,7 @@
       </div>
     </div>
   {% endif %}
-  <div id="pattern" class="pattern">
+    <div id="pattern" class="pattern">
     <div class="wrap" id="wrap">
       <div id="body" class="page-{{ request.template | replace: '_', '-' }}">
 
@@ -68,18 +68,21 @@
               {% include "nav" %}
             </div>
             {% if site.has_meta_image? %}
-
-
               <div class="site-logo">
                 <header><a href="/"><img src="{{ site.meta_image_url }}"></a></header>
               </div>
-
               {% else %}
               <header>
                 <h1 class="title"><a href="/">{{ site.long_name }}</a></h1>
               </header>
             {% endif %}
-
+                <div class="width-container">
+                  <div class="site-subheadline">
+                    {{ site.subheadline }}
+                  </div>
+                </div>
+              </div>
+          
             <div <h1 class="header-text">Backcountry Hunters &amp; Anglers</h1></div>
 
             <div class="header-signup desktop-visible">
@@ -102,7 +105,12 @@
         
 
         {% if page.features_count > 0 %}
-          <div class="width-container">
+<!-- DJM - Ryans -->
+          <div class="features" style="{% if page.is_homepage? %}margin-bottom: -50px;{% endif %}">
+
+<!-- DJM Default
+       <div class="width-container">
+-->
            {% include "features" %}
           </div>
         {% endif %}

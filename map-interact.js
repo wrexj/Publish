@@ -5,7 +5,8 @@ function isTouchEnabled() {
       	|| (navigator.msMaxTouchPoints > 0));
 }
 
-$(function(){			addEvent('map_1');
+$(function(){
+			addEvent('map_1');
 			addEvent('map_2');
 			addEvent('map_3');
 			addEvent('map_4');
