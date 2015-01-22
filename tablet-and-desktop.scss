@@ -154,6 +154,8 @@ header {
     img {
       max-width: none;
       left: 0;
+      max-width: 225px; //DJM - Make the Header on Desktop Larger - Delete if it doesnt work
+      max-height: 100px; //DJM - Make the Header on Desktop Larger  - Delete if it doesnt work
     }
     a{
       position: static;
@@ -238,7 +240,7 @@ footer {
 // top nav with drop downs
 
 .nav-container{
-  background: $nav-background;
+//  background: $nav-background; DJM - Commented so nav b ar doesnt run entire screen
   margin-bottom: -1px;
   position: relative;
   z-index: 5;
@@ -250,7 +252,8 @@ footer {
 }
 
 nav, .subnav {
-  background-color: transparent;
+//background-color: transparent; DJM 
+  background-color: $nav-background; //Eliminate gaps between menu items
   border-right: 0;
   border-top: 0;
   height: auto;
@@ -471,9 +474,8 @@ ul.membership-list {
 
 .page-features {
   position: relative;
-  
-  //DJM -- Adjusted Margins - This is original margin: 35px 0 50px 0;
-  margin: 35px 0 10px 0;
+ //DJM -- Adjusted Margins - This is original margin: 35px 0 50px 0;
+  margin: 15px 0 15px 0;
   .features-headline {
     font-size: 36px;
     line-height: 40px;
@@ -876,6 +878,7 @@ ul.homepage_excerpt-list{
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
   }
+  
 
   // paid membership options
 
@@ -993,3 +996,13 @@ ul.homepage_excerpt-list{
     }
   }
 }
+
+// DJM  - Custom Width Container for header
+
+  .header-width-container {
+    width: 1026px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: $nav-background;
+    
+  }

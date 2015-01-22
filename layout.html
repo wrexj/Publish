@@ -61,10 +61,15 @@
     <div class="wrap" id="wrap">
       <div id="body" class="page-{{ request.template | replace: '_', '-' }}">
 
-        <div class="header-container clearfix">
+        <div class="header-width-container clearfix">
           <div class="width-container clearfix">
-
-
+          <!--DJM - Tablet Nav-->
+          <div class="tablet-visible">
+            {% include "nav" %}
+          </div>
+          <!--DJM - Tablet Nav End-->
+          
+    
             {% if site.has_meta_image? %}
               <div class="site-logo">
                 <header><a href="/"><img src="{{ site.meta_image_url }}"></a></header>
@@ -99,12 +104,13 @@
         
 
         {% if page.features_count > 0 %}
-<!-- DJM - Ryans -->
+<!-- DJM - Ryans
           <div class="features" style="{% if page.is_homepage? %}margin-bottom: 10px;{% endif %}">
-
-<!-- DJM Default
-       <div class="width-container">
--->
+ -->
+ 
+<!-- DJM Default -->
+       <div class="width-container desktop-visible">
+<!-- DJM End -->
            {% include "features" %}
           </div>
         {% endif %}

@@ -2285,7 +2285,8 @@ h4.expander-head {
 .page-features {
   position: relative;
   margin: 35px 0 100px;
-  @include box-shadow(0 0 8px -2px #000);
+  // @include box-shadow(0 0 8px -2px #000); DJM - Original
+  @include box-shadow(4px 4px 8px 0px #000);
   border: $feature-border;
   .single-feature, .multiple-features {
     display: block;
@@ -2646,7 +2647,8 @@ ul.homepage_excerpt-list {
 
 .with-background{
   .header-container{
-    background: white;
+ //   background: white; DJM Commented
+      background: transparent; //DJM Move bg color to width-container
   }
   .title {
     a {
