@@ -63,7 +63,8 @@ small {
 /*  */
  a {
 	text-decoration: none;
-	color:#049;
+        /* DJM -changed hover color to orange */
+	color:#f93c04;
 }
 a:hover {
 	text-decoration: underline;
