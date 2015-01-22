@@ -42,6 +42,10 @@ $theme-color-4: $charcoal;
 
 $desktop-site-bg: $off-white;
 $desktop-site-color: $black;
+$desktop-site-bg: $off-white;
+$desktop-site-color: $black;
+$onecolumn-bg: $tan;
+$twocolumn-color: $black;
 
 $icon-button-bg: $theme-color-4; //blog share bar
 // ----------------------------------------------------
@@ -59,12 +63,8 @@ $title-font-weight: 700; //For Headline
 
 
 //general site settings
-$site-bg: #fff;
-$site-color: #000;
-$desktop-site-bg: #fff;
-$desktop-site-color: #000;
-$onecolumn-bg: #fff;
-$twocolumn-color: #000;
+$site-bg: $off-white;
+$site-color: $black;
 $footer-bg: #000;
 $headline-weight: 700;
 $check_radio_sheet: url(check_radio_sheet.png);
@@ -234,10 +234,13 @@ h6 {
   .twocolumn-container{
     .left-column{
       color: $desktop-site-color;
+      background-color: $onecolumn-bg; 
       h1, h2, h3, h4, h5, h6{
         color: $desktop-site-color;
+        background-color: $onecolumn-bg;
         a {
           color: $desktop-site-color;
+           background-color: $onecolumn-bg;
         }
       }
     }
@@ -247,7 +250,8 @@ h6 {
 .twocolumn-container {
   .left-column, .right-column-wide {
     h1, h2, h3, h4, h5, h6{
-      color: $twocolumn-color;
+      color:  $desktop-site-color;
+      background-color: $onecolumn-bg;
       a {
         color: $twocolumn-color;
       }
@@ -601,7 +605,7 @@ nav {
 
 .supporter-pic {
   text-align: center;
-  background: $ltgrey;
+  background: $onecolumn-bg;
   padding: 30px;
   margin-bottom: 25px;
   .user-status{
@@ -1346,7 +1350,7 @@ footer {
   margin-top: 25px;
 }
 .admin-panel, .action-panel{
-  background: $ltgrey;
+  background: $onecolumn-bg;
   padding: 30px;
   margin-bottom: 25px;
   h4{
@@ -2808,6 +2812,7 @@ ul.homepage_excerpt-list {
 		font-size: 12px;
 		font-weight: 300;
 		line-height: 15px;
+                background: whitesmoke;
 	}
 	.byline {
 		text-transform: uppercase;

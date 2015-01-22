@@ -42,6 +42,8 @@ $theme-color-4: $charcoal;
 
 $desktop-site-bg: $off-white;
 $desktop-site-color: $black;
+$onecolumn-bg: $tan ;
+$twocolumn-color: $black;
 
 $icon-button-bg: $theme-color-4; //blog share bar
 // ----------------------------------------------------
@@ -112,6 +114,7 @@ h1.title {
     // 16px ÷ 1026px
     margin-bottom: 0;
     color: $twocolumn-color;
+    background: $onecolumn-bg;
   }
   .right-column, .left-column-narrow {
     float: left;
