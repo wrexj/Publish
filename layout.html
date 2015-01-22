@@ -64,9 +64,7 @@
         <div class="header-container clearfix">
           <div class="width-container clearfix">
 
-            <div class="tablet-visible">
-              {% include "nav" %}
-            </div>
+
             {% if site.has_meta_image? %}
               <div class="site-logo">
                 <header><a href="/"><img src="{{ site.meta_image_url }}"></a></header>
@@ -97,16 +95,12 @@
         </div>
         <!-- .header-container -->
 
-        <div class="nav-container desktop-visible">
-          <div class="width-container clearfix">
-              {% include "nav" %}
-          </div>
-        </div>
+ 
         
 
         {% if page.features_count > 0 %}
 <!-- DJM - Ryans -->
-          <div class="features" style="{% if page.is_homepage? %}margin-bottom: -50px;{% endif %}">
+          <div class="features" style="{% if page.is_homepage? %}margin-bottom: 10px;{% endif %}">
 
 <!-- DJM Default
        <div class="width-container">
@@ -114,6 +108,11 @@
            {% include "features" %}
           </div>
         {% endif %}
+          <div class="nav-container desktop-visible">
+            <div class="width-container clearfix">
+              {% include "nav" %}
+          </div>
+        </div>
         <div class="main-container" id="middle">
           <div class="main width-container clearfix">
 <!--Custom Homepage Start-->
