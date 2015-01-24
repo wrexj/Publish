@@ -48,7 +48,7 @@
 
 </head>
 <body class="aware-theme v2-theme {{ page.page_class_name }} js {% if site.has_background_image? %}with-background{% endif %}">
-  {% if site.has_header_image? %}
+   {% if site.has_header_image? %}
     <div class="site-header" style="background: url({{ site.header_image_url_1026 }})"width="1440" center no-repeat;">
       <div class="width-container">
         <div class="site-subheadline">
@@ -62,32 +62,44 @@
       <div id="body" class="page-{{ request.template | replace: '_', '-' }}">
 
         <div class="header-width-container clearfix">
-          <div class="width-container clearfix">
+          <!--DJM - Welcome Bar Start-->
+          <div class="welcome-bar">
+        		<div class="width-container">
+       		        	<div class="info" style="float: right;">
+		        		{% if request.logged_in? %}
+		        			<span class="hey">Hi, {{ request.current_signup.name_or_email }}. <a href="{{ request.current_signup.settings_url }}"><img src="settings.png"></a><a href="{{ request.current_signup.logout_url }}"><img src="logout.png"></a> | &nbsp;<a href="/donate">Donate</a></span>
+		        			<gcse:searchbox enableHistory="false" autoCompleteMaxCompletions="5" autoCompleteMatchType='any' enableAutoComplete="true"></gcse:searchbox>
+		        		{% else %}
+		        			<span class="hey"><a href="/login">Sign in</a> | <a href="/donate">Donate</a> | <a href="https://www.youtube.com/user/BackcountryHunters1" target="_blank">YouTube</a></span>
+		        			<gcse:searchbox enableHistory="false" enableAutoComplete="false"></gcse:searchbox>
+		        		{% endif %}
+		        	</div>
+        		</div>
+        	</div>
+          <!--DJM - Welcome Bar End-->
+            <!--DJM Custom Header Image Start-->
+
+          <div class="header-width-container clearfix" style = "height : 256px; background-image: url(http://d3n8a8pro7vhmx.cloudfront.net/backcountryhunters/sites/8/header_images/tentwentysix/Header-Elk.png?1422048408)">
+           
+            <!--DJM Custom Header Image End-->
           <!--DJM - Tablet Nav-->
-          <div class="tablet-visible">
-            {% include "nav" %}
-          </div>
-          <!--DJM - Tablet Nav End-->
+            <div class="tablet-visible">
+              {% include "nav" %}
+            </div>
+            <!--DJM - Tablet Nav End-->
           
-    
+    <!--DJM Logo Start-->
             {% if site.has_meta_image? %}
               <div class="site-logo">
-                <header><a href="/"><img src="{{ site.meta_image_url }}"></a></header>
-              </div>
-              {% else %}
-              <header>
-                <h1 class="title"><a href="/">{{ site.long_name }}</a></h1>
-              </header>
-            {% endif %}
-                <div class="width-container">
-                  <div class="site-subheadline">
-                    {{ site.subheadline }}
-                  </div>
+                <header><a href="/"><img src="{{ site.meta_image_url }}"style= "width : 200px; height : 200px; left : 30px; bottom: auto;top: 30px;"></a></header>
                 </div>
-              </div>
-          
-            <div <h1 class="header-text">Backcountry Hunters &amp; Anglers</h1></div>
-
+              {% else %}
+                <header>
+                  <h1 class="title"><a href="/">{{ site.long_name }}</a></h1>
+                </header>
+              {% endif %}
+    <!--DJM Logo End-->
+      
             <div class="header-signup desktop-visible">
               {% if request.logged_in? or request.sorta_logged_in? or page.page_class_name == 'page-type-donation' or page.page_class_name == 'page-type-signup' or page.page_class_name == 'page-type-volunteer-signup' or request.template == 'user_sessions_new_wide' or page.request.template == 'user_sessions_new'%}
               {% else %}
@@ -98,7 +110,7 @@
           </div>
           <!-- .width-container -->
         </div>
-        <!-- .header-container -->
+        <!-- .header-width-container -->
 
  
         

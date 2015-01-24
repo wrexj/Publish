@@ -165,9 +165,10 @@ header {
     margin-left: 0;
     img {
       max-width: none;
-      left: 0;
-      max-width: 225px; //DJM - Make the Header on Desktop Larger - Delete if it doesnt work
-      max-height: 100px; //DJM - Make the Header on Desktop Larger  - Delete if it doesnt work
+      left: 35px;
+      top: 50px;
+      max-width: 140px; //DJM - Make the Header on Desktop Larger - Delete if it doesnt work
+      max-height: 140px; //DJM - Make the Header on Desktop Larger  - Delete if it doesnt work
     }
     a{
       position: static;
@@ -1032,6 +1033,6 @@ ul.homepage_excerpt-list{
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: $nav-background;
+    background-color: transparent;
     
   }
