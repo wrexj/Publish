@@ -42,10 +42,6 @@ $theme-color-4: $charcoal;
 
 $desktop-site-bg: $off-white;
 $desktop-site-color: $black;
-$desktop-site-bg: $off-white;
-$desktop-site-color: $black;
-$onecolumn-bg: $tan;
-$twocolumn-color: $black;
 
 $icon-button-bg: $theme-color-4; //blog share bar
 // ----------------------------------------------------
@@ -63,8 +59,12 @@ $title-font-weight: 700; //For Headline
 
 
 //general site settings
-$site-bg: $off-white;
-$site-color: $black;
+$site-bg: #fff;
+$site-color: #000;
+$desktop-site-bg: #fff;
+$desktop-site-color: #000;
+$onecolumn-bg: #fff;
+$twocolumn-color: #000;
 $footer-bg: #000;
 $headline-weight: 700;
 $check_radio_sheet: url(check_radio_sheet.png);
@@ -94,11 +94,11 @@ $flex-color: $white;
 
 // supporter nav buttons
 $supporter-nav-button-one: $burgundy;
-$supporter-nav-color-one: #fff;
+$supporter-nav-color-one: #000;
 $supporter-nav-button-two: $tan;
-$supporter-nav-color-two: #fff;
-$supporter-nav-button-three: $greenbha;
-$supporter-nav-color-three: #fff;
+$supporter-nav-color-two: $theme-color-4;
+$supporter-nav-button-three: #000;
+$supporter-nav-color-three: $greenbha;
 
 //turquoise specific fields
 $feature-border: 0;
@@ -196,45 +196,37 @@ h3 {
 }
 
 h1 {
-  // DJM FONT font-size: 48px;
-    font-size: 43px;
+  font-size: 48px;
   text-transform: $headline-transform;
   font-weight: $headline-weight;
   color: $theme-color-2;
 }
 
 h2 {
-  //font-size: 36px;
-  font-size: 32px;
-
+  font-size: 36px;
   text-transform: $headline-transform;
   font-weight: $headline-weight;
   color: $theme-color-2;
 }
 
 h3 {
-  //font-size: 24px;
-    font-size: 21px;
-
+  font-size: 24px;
   font-weight: $headline-weight;
   text-transform: $headline-transform;
 }
 
 h4 {
-  //font-size: 19px;
-    font-size: 17px;
+  font-size: 19px;
   font-weight: $headline-weight;
 }
 
 h5 {
-  font-size: 12px;
-  //font-size: 14px;
+  font-size: 14px;
   font-weight: $headline-weight;
 }
 
 h6 {
-  font-size: 11px;
-  //font-size: 12px;
+  font-size: 12px;
   font-weight: $headline-weight;
 }
 
@@ -242,13 +234,10 @@ h6 {
   .twocolumn-container{
     .left-column{
       color: $desktop-site-color;
-      background-color: $onecolumn-bg; 
       h1, h2, h3, h4, h5, h6{
         color: $desktop-site-color;
-        background-color: $onecolumn-bg;
         a {
           color: $desktop-site-color;
-           background-color: $onecolumn-bg;
         }
       }
     }
@@ -258,8 +247,7 @@ h6 {
 .twocolumn-container {
   .left-column, .right-column-wide {
     h1, h2, h3, h4, h5, h6{
-      color:  $desktop-site-color;
-      background-color: $onecolumn-bg;
+      color: $twocolumn-color;
       a {
         color: $twocolumn-color;
       }
@@ -613,7 +601,7 @@ nav {
 
 .supporter-pic {
   text-align: center;
-  background: $onecolumn-bg;
+  background: $ltgrey;
   padding: 30px;
   margin-bottom: 25px;
   .user-status{
@@ -1067,8 +1055,7 @@ footer {
     margin-top: 15px;
   }
   h4{
-    //font-size: 14px;
-    font-size: 12px;
+    font-size: 14px;
     margin: 15px 0 10px;
   }
   .fb_iframe_widget.comment-box-active > span {
@@ -1082,17 +1069,14 @@ footer {
 // byline used in blogs, suggestion boxes, events, etc.
 
 .byline {
-  /*font-size: 12px;
+  font-size: 12px;
   line-height: 15px;
-  margin: 25px 0;*/
-  font-size: 10px;
-  line-height: 13px;
-  margin: 22px 0;
+  margin: 25px 0;
   font-style: italic;
   .name{
     text-transform: $headline-transform;
     font-family: $headline-font;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: $headline-weight;
     font-style: normal;
     color: $theme-color-4;
@@ -1362,7 +1346,7 @@ footer {
   margin-top: 25px;
 }
 .admin-panel, .action-panel{
-  background: $onecolumn-bg;
+  background: $ltgrey;
   padding: 30px;
   margin-bottom: 25px;
   h4{
@@ -1375,21 +1359,12 @@ footer {
 }
 
 .supporter-nav-button {
-  margin: 5px 0;
-  font-size: 15px;
-  text-align: center;
-  width: 100%;
-  line-height: 26px;
-  padding: 20px;
-  /*
-  DJM Original
   margin: 10px 0;
-  font-size: 15px;
   text-align: center;
+  font-size: 18px;
   width: 100%;
   line-height: 30px;
   padding: 20px;
-  */
   background-color: $supporter-nav-button-one;
   color: $supporter-nav-color-one;
   border-bottom: $supporter-nav-button-border;
@@ -2833,7 +2808,6 @@ ul.homepage_excerpt-list {
 		font-size: 12px;
 		font-weight: 300;
 		line-height: 15px;
-                background: whitesmoke;
 	}
 	.byline {
 		text-transform: uppercase;
@@ -2877,7 +2851,7 @@ ul.homepage_excerpt-list {
 			background-color: lighten($theme-color-1, 10%);
 		}
 	}
-}
+} 
 .take-action {
 	max-width: 95%;
 	padding: 29px 0;

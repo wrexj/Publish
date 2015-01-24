@@ -42,8 +42,6 @@ $theme-color-4: $charcoal;
 
 $desktop-site-bg: $off-white;
 $desktop-site-color: $black;
-$onecolumn-bg: $tan ;
-$twocolumn-color: $black;
 
 $icon-button-bg: $theme-color-4; //blog share bar
 // ----------------------------------------------------
@@ -79,11 +77,8 @@ $onecolumn-container-border: 1px solid $theme-color-3;
 @import "mobile-nav";
 
 blockquote{
-  /*font-size: 24px;
+  font-size: 24px;
   line-height: 28px;
-  */
-  font-size: 21px;
-  line-height: 25px;
 }
 
 body {
@@ -93,11 +88,8 @@ body {
 }
 
 h1.title {
-  
-  /*font-size: 43px;
-  line-height: 45px;*/
-  font-size: 40px;
-  line-height: 42px;
+  font-size: 48px;
+  line-height: 50px;
 }
 
 // page layout if the sidebar is turned on
@@ -120,7 +112,6 @@ h1.title {
     // 16px ÷ 1026px
     margin-bottom: 0;
     color: $twocolumn-color;
-    background: $onecolumn-bg;
   }
   .right-column, .left-column-narrow {
     float: left;
@@ -140,11 +131,8 @@ h1.title {
 // site header image and subheadline
 
 .site-header{
-  
-  /*font-size: 36px;
-  line-height: 40px;*/
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 // wraps your site name or site logo
@@ -165,10 +153,9 @@ header {
     margin-left: 0;
     img {
       max-width: none;
-      left: 35px;
-      top: 50px;
-      max-width: 140px; //DJM - Make the Header on Desktop Larger - Delete if it doesnt work
-      max-height: 140px; //DJM - Make the Header on Desktop Larger  - Delete if it doesnt work
+      left: 0;
+      max-width: 225px; //DJM - Make the Header on Desktop Larger - Delete if it doesnt work
+      max-height: 100px; //DJM - Make the Header on Desktop Larger  - Delete if it doesnt work
     }
     a{
       position: static;
@@ -322,7 +309,7 @@ nav, .subnav {
     width: 100%;
     border: none;
     color: $nav-hover-color;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 28px;
     display: block;
     text-transform: none;
@@ -490,14 +477,9 @@ ul.membership-list {
  //DJM -- Adjusted Margins - This is original margin: 35px 0 50px 0;
   margin: 15px 0 15px 0;
   .features-headline {
-    /*
-     font-size: 36px;
+    font-size: 36px;
     line-height: 40px;
     padding: 15px 65px;
-    */
-    font-size: 32px;
-    line-height: 36px;
-    padding: 13px 59px;
     top: 41%;
   }
   .single-feature, .multiple-features{
@@ -512,10 +494,7 @@ ul.membership-list {
 .flex-prev, .flex-next {
   display: block;
   height: 63px;
-  font-size: 40px;
-/*
- *  font-size: 44px;
-*/
+  font-size: 44px;
   border: $flex-border;
   color: $flex-color;
   padding: px;
@@ -666,12 +645,8 @@ ul.homepage_excerpt-list{
   h3{
     font-family: $font;
     text-transform: none;
-    /*
-        font-size: 30px;
-    line-height: 34px;*/
-    
-    font-size: 27px;
-    line-height: 29px;
+    font-size: 30px;
+    line-height: 34px;
     margin-bottom: 10px;
     color: black;
   }
@@ -728,13 +703,8 @@ ul.homepage_excerpt-list{
 // page specific styles
 
 .content-pages-show-blog-post, .content-pages-show-blog-post-wide{
-  font-size: 13px;
-  line-height: 18px;
-/*
-    font-size: 18px;
+  font-size: 18px;
   line-height: 26px;
-*/
-
 }
 
 .tablet-visible {
@@ -1013,7 +983,7 @@ ul.homepage_excerpt-list{
     }
   }
 }
-
+ 
 @media only screen and (max-width : 768px) {
   .page-pages-show-donation-wide {
     .radio-inline {
@@ -1033,6 +1003,6 @@ ul.homepage_excerpt-list{
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: transparent;
+    background-color: $nav-background;
     
   }

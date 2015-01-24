@@ -112,7 +112,7 @@
     font-size: 12px;
   }
 }
-
+ 
 .signin-social-button{
   padding-bottom: 10px;
   display: block;
@@ -126,19 +126,68 @@
     float: left;
   }
 }
+
+
+.state-page{
+  .button-issues {
+
+  cursor: pointer;
+  display: inline-block;
+  background-color: $green;
+  padding: 12px 15px;
+  border: 0;
+  font: 14px $headline-font;
+  color: $icon-button-color;
+  min-height: 43px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  vertical-align: 0;
+  margin-bottom: 0;
+  white-space: normal;
+  @each $current-headline-font in $headline-font {
+    @if $current-headline-font == 'Josefin Sans' {
+      padding: 12px 15px 10px 15px;
+      line-height: 22px;
+    }
+  }
+  /*
+    margin: -10px 10px 15px 0;
+    display: inline-block;
+    float: left;
+    position: relative;
+    background-color: $green;
+    font-family: $font;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    padding: 0;  }
+*/
+  .button-events {
+    margin: -10px 10px 15px 0;
+    display: inline-block;
+    float: center;
+    position: relative;
+    background-color: $charcoal;
+    font-family: $font;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    padding: 0;  }
+  .button-news {
+    margin: -10px 10px 15px 0;
+    display: inline-block;
+    float: right;
+    position: relative;
+    background-color: $burgundy;;
+    font-family: $font;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    padding: 0;  }
+}
  
-//DJM - Custom Buttons
-.button-header {
-  @include button;
-  font-size : 13px ;
-  margin-top: 0px;
-  padding : 5px 10px;
-  margin-left: 0;
-  margin-right : 0;
-  min-width : 100;
-  min-height :30;
-  margin-left: 0;
-  margin-right : 0;
-  display : table-cell;
- 
-}  
