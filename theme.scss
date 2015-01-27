@@ -44,7 +44,7 @@ $desktop-site-bg: $off-white;
 $desktop-site-color: $black;
 $desktop-site-bg: $off-white;
 $desktop-site-color: $black;
-$onecolumn-bg: $tan;
+$onecolumn-bg: $ltgrey;
 $twocolumn-color: $black;
 
 $icon-button-bg: $theme-color-4; //blog share bar
@@ -242,7 +242,7 @@ h6 {
   .twocolumn-container{
     .left-column{
       color: $desktop-site-color;
-      background-color: $onecolumn-bg; 
+      background-color: $onecolumn-bg;
       h1, h2, h3, h4, h5, h6{
         color: $desktop-site-color;
         background-color: $onecolumn-bg;
@@ -777,7 +777,7 @@ nav {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -webkit-appearance: none;
-    width: 63%; 
+    width: 63%;
     @include border-radius-top-right(0px);
     @include border-radius-bottom-right(0px);
     border-right: 0;
@@ -869,7 +869,7 @@ nav {
   }
   .linked-signup-name {
     color: $theme-color-4;
-    a{ 
+    a{
       color: $theme-color-4;
     }
   }
@@ -881,7 +881,7 @@ ul#page-stream {
   li.activity  {
     span + a {
     display: block;
-    } 
+    }
   }
   .activity-time {
     display: block;
@@ -1398,10 +1398,10 @@ footer {
     color: $supporter-nav-color-two;
     &:hover {
       @if lightness($icon-button-color) > 50% {
-        background-color: darken($theme-color-1, 5);
+        background-color: darken($icon-button-color, 5);
       }
       @else {
-        background-color: lighten($theme-color-1, 5);
+        background-color: lighten($icon-button-color, 5);
       }
     }
   }
@@ -1410,10 +1410,10 @@ footer {
     color: $supporter-nav-color-three;
     &:hover {
       @if lightness($icon-button-color) > 50% {
-        background-color: darken($theme-color-1, 5);
+        background-color: darken($icon-button-color, 5);
       }
       @else {
-        background-color: lighten($theme-color-1, 5);
+        background-color: lighten($icon-button-color, 5);
       }
     }
   }
@@ -1485,7 +1485,7 @@ footer {
     }
   }
   li a:hover {
-    background-color: darken($theme-color-2, 10);
+    background-color: darken($theme-color-1, 10);
   }
   li.current a, li.current a:hover {
     color: #fff;
@@ -2423,8 +2423,8 @@ h4.expander-head {
 }
 
 .flex-prev, .flex-next {
-  display: block; 
-  position: absolute; 
+  display: block;
+  position: absolute;
   top: 41%;
   z-index: 9999;
   font-size: 36px;
@@ -2527,7 +2527,7 @@ ul.homepage_excerpt-list {
     }
     .progress {
       margin-bottom: 0;
-    } 
+    }
     ul.question-list {
       margin: 15px 0 0 15px;
       border: none;
@@ -2713,7 +2713,7 @@ ul.homepage_excerpt-list {
     .excerpt-type{
       a{
         color: black;
-      } 
+      }
     }
   }
 
@@ -2912,4 +2912,23 @@ ul.homepage_excerpt-list {
   }
 }
 
-
+//DJM - Homepage Buttones
+.homepage-button {
+	max-width: 95%;
+ //	padding: 29px 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #c2c2c2;
+	.headline {
+		a {
+			font-size: 28px;
+			font-weight: 300;
+		}
+	}
+	.button {
+		border-radius: 0;
+		background-color: transparent;
+		font-size: 18px;
+    text-align: center;
+    width: 95%;
+	}
+}
