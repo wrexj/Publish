@@ -13,14 +13,14 @@
   <title>{{ page_title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
-
+  
   <link rel="stylesheet" type="text/css" href="map-style.css">
   <link href="tabs.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="theme.scss" type="text/css">
   <link rel="stylesheet" href="tablet-and-desktop.scss" type="text/css" media="screen and (min-width: 768px)">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-
+ 
   <!-- because ie8 ignores media queries, we need this -->
   <!--[if IE 8]>
     <link rel="stylesheet" href="tablet-and-desktop.scss" type="text/css">
@@ -43,8 +43,13 @@
    <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Oswald:400,300,700|Lato:400,700,400italic,700italic|Bree+Serif|Josefin+Sans:700|Bitter:400,700,400italic|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
   <script src="map-config.js" type="text/javascript"></script>
   <script src="map-interact.js" type="text/javascript"></script>
+  
+    <!--DJM - Fancybox Code -->
+  <link rel="stylesheet" href="{{ theme['jquery.fancybox.css'] }}?v=2.1.5" type="text/css" media="screen">
+	<script type="text/javascript" src="{{ theme['jquery.fancybox.pack.js'] }}"></script>
 
 
+ 
 
 </head>
 <body class="aware-theme v2-theme {{ page.page_class_name }} js {% if site.has_background_image? %}with-background{% endif %}">
@@ -69,7 +74,7 @@
 		        		{% if request.logged_in? %}
 		        			<!--<span class="hey">Hi, {{ request.current_signup.name_or_email }}. <a href="{{ request.current_signup.settings_url }}"><img src="settings.png"></a><a href="{{ request.current_signup.logout_url }}"><img src="logout.png"></a> | &nbsp;<a href="/donate">Donate</a></span> DJM - Original-->
 						<span class="top-menu" ><a class="button-header" href="/Store">Store</a><a class="button-header" href="/join_now">Join / Upgrade</a><a class="button-header" href="{{ request.current_signup.settings_url }}">My Account</a><a class="button-header" href="{{ request.current_signup.logout_url }}">Logout</a></span>
-		        			<div class="header-welcome-message">Logged in as {{ request.current_signup.name_or_email }}
+		        			<div class="header-welcome-message">Logged in as {{ request.current_signup.name_or_email }} 
 									 </div>
 									<gcse:searchbox enableHistory="false" autoCompleteMaxCompletions="5" autoCompleteMatchType='any' enableAutoComplete="true"></gcse:searchbox>
 		        		{% else %}
@@ -83,14 +88,14 @@
             <!--DJM Custom Header Image Start-->
 
           <div class="header-width-container clearfix" style = "height : 256px; background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/backcountryhunters/pages/1193/attachments/original/1422120795/1026x256-Header-Elk.png?1422120795;)">
-
+           
             <!--DJM Custom Header Image End-->
           <!--DJM - Tablet Nav-->
             <div class="tablet-visible">
               {% include "nav" %}
             </div>
             <!--DJM - Tablet Nav End-->
-
+          
     <!--DJM Logo Start-->
             {% if site.has_meta_image? %}
               <div class="site-logo">
@@ -102,7 +107,7 @@
                 </header>
               {% endif %}
     <!--DJM Logo End-->
-
+      
             <div class="header-signup desktop-visible">
               {% if request.logged_in? or request.sorta_logged_in? or page.page_class_name == 'page-type-donation' or page.page_class_name == 'page-type-signup' or page.page_class_name == 'page-type-volunteer-signup' or request.template == 'user_sessions_new_wide' or page.request.template == 'user_sessions_new'%}
               {% else %}
@@ -115,14 +120,14 @@
         </div>
         <!-- .header-width-container -->
 
-
-
+ 
+        
 
         {% if page.features_count > 0 %}
 <!-- DJM - Ryans
           <div class="features" style="{% if page.is_homepage? %}margin-bottom: 10px;{% endif %}">
  -->
-
+ 
 <!-- DJM Default -->
        <div class="width-container desktop-visible">
 <!-- DJM End -->
@@ -157,7 +162,7 @@
 					    <div id="content">
 
 						<div class="homepage-mission-panel">
-							<h4>Hunting and fishing isn’t what we do – it’s who we are. Backcountry Hunters & Anglers celebrate the great American tradition of testing your personal boundaries amid the solitude of the wilds. We understand the urgent need to speak up for those irreplaceable experiences if we want that kind of opportunity for future generations.
+							<h4>Hunting and fishing isnâ€™t what we do â€“ itâ€™s who we are. Backcountry Hunters & Anglers celebrate the great American tradition of testing your personal boundaries amid the solitude of the wilds. We understand the urgent need to speak up for those irreplaceable experiences if we want that kind of opportunity for future generations.
                                                         </h4>
 						</div>
 					    <div id="tabs" class="tabs">
@@ -182,10 +187,10 @@ div.vertical-line{
 						</section>
 						<section id="section-2">
 						{% tag "news" with "blog_latest" %}
-
+	
 </section>
 						<section id="section-3">
-						{% tag "take_action" with "take_action" %}
+						{% tag "take_action" with "take_action" %} 
 						</section>
 					    </div>
 					  </div>
@@ -195,7 +200,7 @@ div.vertical-line{
 					  </div>
 					      </div>
     <!--Right Column-->
-
+ 
     <div class="right-column">
 
     {% if request.logged_in? %}
@@ -270,12 +275,12 @@ div.vertical-line{
           </div>
           <!-- .main -->
         </div>
-
+        
         <!-- .main-container -->
 
         <footer>
           <div class="width-container clearfix">
-
+          
             {{ content_for_footer }}
 
             <div class="row-fluid">
@@ -335,7 +340,7 @@ div.vertical-line{
               </div>
 
             </div>
-
+          
           </div>
           <!-- .width-container -->
         </footer>

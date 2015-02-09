@@ -1,0 +1,10 @@
+diff a/layout.html b/layout.html	(rejected hunks)
+@@ -110,7 +110,7 @@
+           </div>
+           <!-- .width-container -->
+         </div>
+-        <!-- .header-container -->
++        <!-- .header-width-container -->
+ 
+  
+         

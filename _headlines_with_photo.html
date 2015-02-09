@@ -1,0 +1,20 @@
+<!--  DJM - Primarily for Galleries, a listing of headlines and a photo of pages with a specific tag 
+
+<table style="width: 500px; height: 38px;" border="0"> -->
+<table>  
+<tbody>
+{% for post in tag.most_recent_published_pages_no_pagination %}
+
+		<tr class="media-widget" >
+      <td class="media-image" >
+    		{% for image in post.attachments limit:1 %}
+				<img src="{{ image.url }}" alt="{{ post.headline }}">
+    		{% endfor %}
+ 			</td>
+  		<td class="h4" >
+        <a href="{{ post.url }}" style="margin-left : 20px" >{{ post.headline }}</a>
+			</td>
+	</tr>
+{% endfor %}
+  </tbody>
+  </table>

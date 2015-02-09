@@ -1754,7 +1754,7 @@ ul.membership-list {
     padding: 15px;
     display: inline-block;
     margin: 0 10px 15px 0;
-    width: 100%; // 236px ÷ 984px
+    width: 100%; // 236px Ã· 984px
     .membership-bottom {
       background-color: #444;
       color: #ccc;
@@ -2932,3 +2932,23 @@ ul.homepage_excerpt-list {
     width: 95%;
 	}
 }
+
+// DJM - Headline Listing with Images
+.media-widget{
+    background: $onecolumn-bg;
+    margin-bottom: 20px;
+
+    .media-image{
+      max-height: 100px;
+    max-width: 100px;
+      @include background-size(cover !important);
+  
+    }
+  	.media-headline {
+		  h4 {
+     margin-left: 10px;
+     }
+  }
+}
+
+

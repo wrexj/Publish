@@ -6,13 +6,13 @@
       {% assign field_name = ticket_field_prefix | append: "[first_name]" %}
       {% assign error_message = ticket | error: "first_name" %}
       {% label_tag field_name, "First name" %}
-      {% text_field_tag field_name, ticket.first_name %}
+      {% text_field_tag field_name, ticket.first_name, error_message %}
     </div>
     <div class="span4">
       {% assign field_name = ticket_field_prefix | append: "[last_name]" %}
       {% assign error_message = ticket | error: "last_name" %}
       {% label_tag field_name, "Last name" %}
-      {% text_field_tag field_name, ticket.last_name %}
+      {% text_field_tag field_name, ticket.last_name, error_message %}
     </div>
     <div class="span4">
       {% assign field_name = ticket_field_prefix | append: "[email]" %}

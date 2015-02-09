@@ -115,9 +115,9 @@ h1.title {
   .left-column, .right-column-wide {
     float: left;
     width: 67.2261208577%;
-    // 710px ÷ 1026px
+    // 710px Ã· 1026px
     margin-right: 2.559454191033%;
-    // 16px ÷ 1026px
+    // 16px Ã· 1026px
     margin-bottom: 0;
     color: $twocolumn-color;
     background: $onecolumn-bg;
@@ -127,12 +127,12 @@ h1.title {
   margin-top: 0;
   margin-bottom: 20px;
     float: left;
-    width: 48%;
+    width: 47%;
 
-    // 710px ÷ 1026px
+    // 710px Ã· 1026px
     margin-right: 8px;
     margin-left: 8px;
-        // 16px ÷ 1026px
+        // 16px Ã· 1026px
     margin-bottom: 0;
     color: $twocolumn-color;
     background: $onecolumn-bg;
@@ -140,7 +140,7 @@ h1.title {
   .right-column, .left-column-narrow {
     float: left;
     width: 30.214424951267%;
-    // 310px ÷ 1026px
+    // 310px Ã· 1026px
     margin-bottom: 0;
   }
   .right-column-wide {
@@ -148,7 +148,7 @@ h1.title {
   }
   .left-column-narrow {
     margin-right: 2.559454191033%;
-    // 16px ÷ 1026px
+    // 16px Ã· 1026px
   }
 }
 
@@ -166,7 +166,7 @@ h1.title {
 
 header {
   max-width: 50%;
-  // 286px ÷ 1140px
+  // 286px Ã· 1140px
   float: left;
   padding: 20px 0 20px 30px;
 }

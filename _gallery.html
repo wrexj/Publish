@@ -1,0 +1,18 @@
+{% for attachment in page.attachments %}
+<a href="{{ attachment.url }}" class="fancybox" rel="gallery1"><img src="{{ attachment.url }}" width="200" height="200" style = "margin : 10px"></a>
+{% endfor %}
+
+<script>
+$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0,
+  helpers : {
+        title : null
+    }
+      
+    });
+ 
+
+</script>
+
