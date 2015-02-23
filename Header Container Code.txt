@@ -1,0 +1,10 @@
+.header-container {
+padding-bottom: 40px;
+min-height: 140px;
+background: url("header-charcoal.jpg") repeat-x #34424b;
+background: url("elk-2-blurred-1200x300.png");
+background-repeat: no-repeat;
+background-position: center;
+background-color: sienna;
+height: 296px;
+}
